@@ -1,0 +1,29 @@
+﻿.table {
+    margin-bottom:0;
+    thead {
+        th {
+            color: $th-color;
+            font-size: $f-13px;
+            font-weight: $fw-medium;
+            border-top: 0;
+            border-bottom: 0;
+        }
+    }
+
+    td {
+        font-size: $f-14px;
+        font-weight: $fw-regular;
+        color: $td-color;
+        vertical-align:middle;
+        border-color:$table-border-color;
+    }
+    a, .btn{
+        color:$grey;
+    }
+}
+
+.team-list-table{
+    th{
+        min-width:100px;
+    }
+}

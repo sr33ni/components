@@ -1,0 +1,219 @@
+﻿.form-control {
+    border-color: $input-border;
+    border-radius: 8px;
+    color: $grey-100;
+    font-weight: $fw-medium;
+    font-size: $f-15px;
+    padding: 0.75rem 1rem;
+    min-height: 48px;
+
+    &.custom-input1 {
+        padding: 0.5rem 0.75rem;
+        min-height: unset;
+        background-color: transparent;
+        height: auto;
+        border: 0 !important;
+        box-shadow: none !important;
+    }
+
+    &:focus {
+        box-shadow: $input-focus-boxshadow;
+        border-color: $input-focus-border-color;
+    }
+}
+
+.form-group {
+    margin-bottom: 1.538rem;
+
+    &.form-group-sm {
+        .form-control {
+            padding: .375rem .75rem;
+            min-height: auto;
+        }
+    }
+}
+
+.dropdown-noCaret {
+    &:after {
+        display: none;
+    }
+}
+
+
+
+.form-normal {
+    .form-group {
+        label {
+            color: $grey;
+            font-size: $f-14px;
+            font-weight: $fw-medium;
+            margin-bottom: 0.5rem;
+        }
+
+        .custom-file {
+            height: auto;
+
+            .custom-file-input {
+                min-height: 48px;
+                padding: 1rem 1.538rem;
+            }
+
+            .custom-file-label {
+                min-height: 48px;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                padding: 1rem 1.538rem;
+                padding-left: 120px;
+                font-size: $f-14px;
+
+                span {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                &:after {
+                    height: auto;
+                    content: "Choose File";
+                    font-size: $f-14px;
+                    display: inline-flex;
+                    align-items: center;
+                    color: $grey;
+                    left: 0;
+                    right: auto;
+                    border: 0;
+                    border-radius: 8px 0 0 8px;
+                    background-color: $white;
+                    padding: .375rem 1rem;
+                    border-right: 1px solid $silver-100;
+                }
+            }
+
+            .custom-file-input:focus ~ .custom-file-label:after {
+                box-shadow: $input-focus-boxshadow;
+                border-color: $input-focus-border-color;
+            }
+        }
+    }
+}
+
+select {
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+    background: url('../images/angle-down.png') calc(100% - 1.538rem) 52% no-repeat $white;
+    padding-right: 50px !important;
+    text-overflow: ellipsis;
+}
+
+
+.form-inline {
+    .form-group {
+        label {
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+/*-------------Custom Form Style1---------------*/
+
+.form-style1 {
+    .form-group {
+        position: relative;
+        min-height: 60px;
+        margin-bottom: 0;
+        margin-top: 1.538rem;
+
+        .label-txt {
+            position: absolute;
+            left: 1rem;
+            top: -0.85rem;
+            color: $grey;
+            font-size: $f-14px;
+            font-weight: $fw-medium;
+            @extend %transition-5s;
+
+            &.label-focus {
+                top: -1.5rem;
+                color: $input-label-focus-color;
+                font-size: $f-13px;
+            }
+
+            &.label-active {
+                color: $input-label-focus-color;
+            }
+        }
+
+        .custom-file {
+            height: auto;
+            margin-top: 1.538rem;
+            margin-bottom: 1rem;
+            box-shadow: none !important;
+
+            .custom-file-input {
+                min-height: 48px;
+                padding: 1rem 1.538rem;
+                box-shadow: none !important;
+                font-size: $f-14px;
+
+                &:focus {
+                    box-shadow: none !important;
+                }
+            }
+
+            .custom-file-label {
+                min-height: 48px;
+                border-radius: 0px;
+                border: 0;
+                border-bottom: 2px solid $silver-100;
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                padding-right: 120px;
+                box-shadow: none !important;
+                color: $grey;
+                font-weight: $fw-medium;
+                font-size: $f-14px;
+
+                span {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                &:after {
+                    height: auto;
+                    content: "Choose File";
+                    display: inline-flex;
+                    align-items: center;
+                    color: $grey;
+                    left: auto;
+                    right: 0;
+                    border: 0;
+                    border-radius: 0;
+                    background-color: $silver-100;
+                    padding: .375rem 1rem;
+                    font-size: $f-14px;
+                }
+            }
+
+            .custom-file-input:focus ~ .custom-file-label:after {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .form-control {
+        border: 0;
+        border-radius: 0;
+        border-bottom: 2px solid $input-border-color;
+
+        &:focus {
+            box-shadow: none;
+            border-color: $input-focus-border-color;
+        }
+    }
+}
+
+/*-------------Custom Form Style1---------------*/

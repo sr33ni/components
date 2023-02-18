@@ -1,0 +1,136 @@
+﻿.rightModal {
+    .modal-dialog {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: auto;
+        border: 0;
+        border-radius: 0;
+        margin: 0;
+        min-height: 100vh;
+        max-height: 100vh;
+        @extend %transition-5s;
+
+        .modal-content {
+            border: 0;
+            border-radius: 0;
+            min-height: 100vh;
+            max-height: 100vh;
+            margin: 0;
+        }
+
+        .modal-header {
+            padding: 2.307rem 3.076rem 1.076rem 3.076rem;
+            border-color: $silver;
+        }
+
+        .modal-title {
+            font-size: $f-22px;
+            font-weight: $fw-semibold;
+            color: $blue-dark;
+        }
+
+        .modal-body {
+            padding: 2.307rem 3.076rem 2.307rem 2.576rem;
+            border-color: $silver;
+
+            form {
+                padding-left: 0.5rem;
+            }
+        }
+
+        .modal-footer {
+            padding: 1.875rem 3.076rem 1.875rem 3.076rem;
+        }
+    }
+
+    &.fade {
+        @extend %transition-5s;
+
+        .modal-dialog {
+            right: -580px;
+            -moz-transform: translateX(0px) translateY(0px);
+            -webkit-transform: translateX(0px) translateY(0px);
+            -o-transform: translateX(0px) translateY(0px);
+            -ms-transform: translateX(0px) translateY(0px);
+            transform: translateX(0px) translateY(0px);
+            @extend %transition-5s;
+        }
+    }
+
+    &.show {
+        .modal-dialog {
+            right: 0;
+        }
+    }
+}
+
+.modal-dialog-md {
+    max-width: 580px;
+}
+
+/*------------------Modal Zoom Starts-----------------------*/
+
+.modal {
+    &.zoom {
+        @extend %transition-5s;
+    }
+
+    &.fade {
+        .modal-dialog.modal-dialog-zoom {
+            -webkit-transform: translate(0,0)scale(.5);
+            transform: translate(0,0)scale(.5);
+            @extend %transition-2s;
+        }
+
+        &.show {
+            .modal-dialog.modal-dialog-zoom {
+                -webkit-transform: translate(0,0)scale(1);
+                transform: translate(0,0)scale(1);
+            }
+        }
+    }
+}
+
+/*------------------Modal Zoom Ends-----------------------*/
+
+.dialogBox {
+    .dialog-content {
+        border-radius: 8px;
+
+        .modal-body {
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        .top_icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-weight: $fw-bold;
+            color: $blue-dark;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-weight: $fw-regular;
+            color: $grey;
+            margin-bottom: 1rem;
+        }
+
+        &.danger {
+            .top_icon {
+                color: $danger;
+            }
+        }
+
+        &.success {
+            .top_icon {
+                color: $success;
+            }
+        }
+    }
+}

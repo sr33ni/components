@@ -1,0 +1,30 @@
+﻿.ellipsis-dropdown{    
+    .dropdown-toggle{
+        color: $grey-200;
+        font-size: $f-14px;
+        padding:0;
+        border:0 !important;
+        outline:0 !important;
+        box-shadow:none !important;
+        border-radius:0;
+        height:auto;
+        min-height:unset;
+        min-width:20px;
+        justify-content:center;
+    }
+    .dropdown-menu{
+        background: $white;
+        border: 1px solid $silver-200;
+        box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.03);
+        border-radius: 8px;
+    }
+}
+.advanced-search{
+    
+    .dropdown-menu{
+        background: $white;
+        border: 1px solid $silver-200;
+        box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.03);
+        border-radius: 8px;
+    }
+}

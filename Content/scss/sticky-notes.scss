@@ -1,0 +1,55 @@
+﻿.sticky-note {
+    margin: 0 0.2em 2em;
+    min-height: 230px;
+    font-size: 0.875rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    -webkit-box-shadow: 0 8px 9px -6px #a9adb48f;
+    -moz-box-shadow: 0 8px 9px -6px #a9adb48f;
+    box-shadow: 0 8px 9px -6px #a9adb48f;
+    border: 1px solid #a9adb426;
+    width: 100%;
+    header {
+        border-bottom: 1px solid $white-100;
+        padding: 15px;
+        position:relative;
+        &:after{
+            position: absolute;
+            content:"";
+            top: -1px;
+            right: -3px;
+            width: 0;
+            height: 0;
+            border-bottom: 50px solid $silver;
+            border-right: 50px solid $white;
+        }
+        p{
+            margin-bottom:0;
+        }
+    }
+    main {
+        border-bottom: 1px solid $white-100;
+        padding: 15px;
+        min-height: 130px;
+    }
+    footer {
+        padding: 15px;
+        p{
+            margin-bottom:0;
+        }
+    }
+    &.warning{
+        background: $warning-bg;
+    }
+    &.success{
+        background: $success-bg;
+    }
+    &.danger{
+        background: $danger-bg;
+    }
+    &.info{
+        background: $info-bg;
+    }
+}

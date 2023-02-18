@@ -1,0 +1,1094 @@
+<!doctype html>                
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Content/Libraries/bootstrap-4.2.1/scss/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/Libraries/scrollbar/ScrollBar.css" rel="stylesheet">
+    <link href="Content/Libraries/Kendo/Style/kendo.common.min.css" rel="stylesheet">
+    <link href="Content/Libraries/Kendo/Style/kendo.default.min.css" rel="stylesheet">
+    <link href="Content/Libraries/Kendo/Style/kendo.default.mobile.min.css" rel="stylesheet">
+    <link href="Content/Libraries/animate/animate.css" rel="stylesheet">
+    <link href="Content/scss/style.css" rel="stylesheet">
+    <title>Hello, world!</title>
+</head>                
+<body controls id="fullscreen">
+    <header class="" id="head">
+        <div class="sidemenu open">
+            <span class="sidemenu-bg open"></span>
+            <div class="main-header bg-white main-header-medium sidecontent open">
+                <span class="logo open">
+                    <img class="logo-close img-fluid logo-purple " src="Content/images/mainlogo.svg" />
+                    <img class="logo-open img-fluid logo-name-purple" src="Content/images/logoname.svg" />
+                </span>
+                <div class="row">
+                    <ul class="d-flex col-lg-6 col-md-4 col-sm-3 align-items-center ">
+                        <li class="toggler pl-1">
+                            <span class="toggle-btn open">
+                                <span class="topbar"></span>
+                                <span class="middlebar"></span>
+                                <span class="botttombar"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="search-box-outer pl-3">
+                                <form class="search-box advanced-search-box">
+                                    <i class="far fa-search"></i>
+                                    <div class="form-group form-group-sm border-bottom-0">
+                                        <input type="text" class="form-control search-input" id="exampleInput1" placeholder="Search here" />
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="d-flex col-lg-6 col-md-8 col-sm-9 align-items-center">
+                        <li class="mr-md-auto ml-lg-auto">
+                            <div class="dropdown advanced-search">
+                                <span><i class="fas fa-dot-circle img-not-dot text-success"></i></span>
+                                <span class=""><img class="face-circle-edit  " src="Content/images/face1.jpg" /></span>
+                                <span class="h4 font-weight-lighter ml-2">David Gray.H</span>
+                                <i class="ml-1 text-grey fas fa-chevron-down dropdown-toggle dropdown-noCaret font-new-palette" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> </i>
+                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item font-ubuntu" href="#"><i class="fas fa-sync-alt custom-gradient-fnt-color-three mr-3 "></i><span class="h4">Activity log</span></a>
+                                    <a class="dropdown-item font-ubuntu" href="#"><i class="fal fa-sign-out-alt custom-gradient-fnt-color-two mr-3"></i><span class="h4">Log out</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="example-collapse" class="collapse d-lg-block ml-auto ">
+                            <div class="grid-wrapper grid-col-five ">
+                                <span> <i class="far fa-square text-grey " onclick="openFullscreen();"></i></span>
+                                <span class="dropdown advanced-search">
+                                    <i class=" text-grey far fa-envelope text-grey dropdown-toggle dropdown-noCaret " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fas fa-dot-circle not-dot new-warning-font"></i><span class="notifi-dot"></span></i>
+                                    <span class="dropdown-menu dropdown-width dropdown-menu-left " aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item font-ubuntu "><span class="h6 p4 font-weight-bold">Message</span></a>
+                                        <a class="dropdown-item font-ubuntu d-flex align-items-center" href="#"><img class="face-circle w-25" src="Content/images/face4.jpg" /> <span class="d-flex flex-column  ml-3"> <span class="p">Mark send you a message</span><span class="">1 Min ago</span> </span> </a>
+                                        <a class="dropdown-item font-ubuntu d-flex align-items-center" href="#"><img class="face-circle w-25" src="Content/images/face4.jpg" /> <span class="d-flex flex-column  ml-3"> <span class="p">Mark send you a message</span><span class="">1 Min ago</span> </span> </a>
+                                        <a class="dropdown-item font-ubuntu d-flex align-items-center" href="#"><img class="face-circle w-25" src="Content/images/face4.jpg" /> <span class="d-flex flex-column  ml-3"> <span class="p">Mark send you a message</span><span class="">1 Min ago</span> </span> </a>
+                                        <a class="dropdown-item font-ubuntu d-flex align-items-center" href="#"><img class="face-circle w-25" src="Content/images/face4.jpg" /> <span class="d-flex flex-column  ml-3"> <span class="p">Mark send you a message</span><span class="">1 Min ago</span> </span> </a>
+                                    </span>
+                                </span>
+                                <span class="dropdown advanced-search">
+                                    <i class=" text-grey far fa-bell text-grey dropdown-toggle dropdown-noCaret " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fas fa-dot-circle not-dot new-danger-font"></i></i>
+                                    <span class="dropdown-menu dropdown-menu-left " aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item font-ubuntu "><span class="h6 p4 font-weight-bold">Notification</span></a>
+                                        <a class="dropdown-item font-ubuntu d-flex align-items-center" href="#"><i class=" fas fa-calendar-week new-info-font"> </i> <span class="d-flex flex-column  ml-3"> <span class="p font-weight-bold">Event Today</span><span class="">Just a reminder that you ha.....</span> </span> </a>
+                                        <a class="dropdown-item font-ubuntu d-flex align-items-center" href="#"><i class="fas fa-cog new-primary-font"></i> <span class="d-flex flex-column  ml-3"> <span class="p font-weight-bold">Settings</span><span class="">Updatecdashboard</span> </span> </a>
+                                        <a class="dropdown-item font-ubuntu d-flex align-items-center" href="#"><i class="fas fa-link new-danger-font"></i> <span class="d-flex flex-column  ml-3"> <span class="p font-weight-bold">Launch Admin</span><span class="">New admin wow!</span> </span> </a>
+                                        <a class="dropdown-item font-ubuntu "><span class="h6 p4 text-center font-weight-bold">See More Notification</span></a>
+                                    </span>
+                                </span>
+                                <span><i class="fas fa-power-off text-grey"></i></span>
+                                <span><i class="far fa-sliders-v text-grey"></i></span>
+                            </div>
+
+                        </li>
+                        <li class="">
+                            <i class="btn d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#example-collapse">
+                                <span class="navbar-light"><span class="navbar-toggler-icon"></span></span>
+                            </i>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <ul class="menu-list">
+                <li class="dis-play-img open">
+                    <a class="">
+                        <i><img class="w-50 face-circle " src="Content/images/face1.jpg" /></i>
+                        <span class="d-flex flex-column w-50 display-text"><span class="h6 font-weight-bold">David Gray.H</span><span class="p font-new-palette ">Project Manager</span></span>
+                        <i class="ml-5 fas fa-bookmark"></i>
+                    </a>
+                </li>
+
+                <li><a class="tablink d-flex" id="defaultOpen" onclick="openPage('Home', this)"><span class="dis-play open">Dashboard</span><i class="ml-auto fas fa-home sidecontent-icon open"></i></a></li>
+                <li><a class="tablink d-flex" onclick="openPage('UI', this)"><span class=" dis-play open">UI Elements</span><i class=" ml-auto fas fa-location sidecontent-icon open"></i></a></li>
+                <li><a href="#" class="d-flex" onclick=""><span class="dis-play open">Icons</span><i class="ml-auto far fa-address-card sidecontent-icon open"></i></a></li>
+                <li><a class="tablink d-flex" onclick="openPage('Form', this)"><span class="dis-play open">Form</span><i class="ml-auto fas fa-list sidecontent-icon open"></i></a></li>
+                <li><a href="#" class="d-flex" onclick=""><span class="dis-play open">Charts</span><i class="ml-auto fas fa-chart-bar sidecontent-icon open"></i></a></li>
+                <li><a href="#" class="d-flex" onclick=""><span class="dis-play open">Table</span><i class=" ml-auto fas fa-calendar-alt sidecontent-icon open"></i></a></li>
+                <li><a href="#" class="d-flex" onclick=""><span class="dis-play open ">Sample-Pages</span><i class="ml-auto fas fa-briefcase-medical sidecontent-icon open position-relative"><i data-toggle="collapse" data-target="#main-collapse" class=" fas fa-chevron-left custom-font-one chevron "></i></i></a></li>
+                <li class="ml-5 ">
+                    <span id="main-collapse" class="collapse">
+                        <a class="tablink d-flex mt-3" onclick="openPage('login', this); "><span onclick="displayNone(this);" class="custom-font-two bullet">Log in</span></a>
+                        <a href="#" class="d-flex mt-3" onclick=""><span class="custom-font-two bullet">Register</span></a>
+                        <a class="tablink d-flex mt-3" onclick="openPage('errorPage', this);"><span onclick="displayNone(this);" class="custom-font-two bullet">404</span></a>
+                        <a href="#" class="d-flex mt-3" onclick=""><span class="custom-font-two bullet">500</span></a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="body-content page-wrapper bg-new-palette " id="pageContent">
+        <div id="Home" class="tabcontent">
+            <div class="sidecontent open">
+                <div class="row bg-mute">
+                    <div class="col-lg-12 d-flex align-items-center">
+                        <button class="btn btn-primary text-white button-new ">
+                            <i class="fas fa-home"></i>
+                        </button>
+                        <h3 class="ml-2">Dashboard</h3>
+                        <p class="ml-auto">Overview</p>
+                        <i class="fas fa-info-circle ml-2 text-grey"></i>
+                    </div>
+                </div>
+
+                <div class="mt-1">
+                    <div class="row">
+                        <div class="col-sm mt-4">
+                            <div class="card new-danger-bg text-white" style="width: 100%;">
+                                <div class="card-body">
+                                    <h5 class="card-title mt-3">Weekly Sales</h5>
+                                    <h2 class="card-subtitle mb-5 mt-3">$ 15,0000</h2>
+                                    <h5 class="card-text mb-3">Increase by 60%</h5>
+                                    <div class="t-circle-one"></div>
+                                    <div class="t-circle-two"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm mt-4">
+                            <div class="card new-info-bg text-white  mr-4" style="width: 100%;">
+                                <div class="card-body ">
+                                    <h5 class="card-title mt-3">Weekly Sales</h5>
+                                    <h2 class="card-subtitle mb-5 mt-3">49,5057</h2>
+                                    <h5 class="card-text mb-3">Increase by 10%</h5>
+                                    <div class="t-circle-one"></div>
+                                    <div class="t-circle-two"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm mt-4">
+                            <div class="card new-success-bg text-white  mr-4" style="width: 100%;">
+                                <div class="card-body">
+                                    <h5 class="card-title mt-3">Weekly Sales</h5>
+                                    <h2 class="card-subtitle mb-5 mt-3">95,5741</h2>
+                                    <h5 class="card-text mb-3">Increase by 5%</h5>
+                                    <div class="t-circle-one"></div>
+                                    <div class="t-circle-two"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mt-4 grid-wrapper grid-col-two-new ">
+                    <div class="box-container bg-white">
+                        <div class="grid-wrapper grid-col-four-new ">
+                            <h3 class="ml-2">Visit & Sales Statistics</h3>
+                            <i class="fas fa-circle  new-primary-font"><span class="text-muted ml-1 font-ubuntu custom-font-one pb-1">USA</span></i>
+                            <i class="fas fa-circle  new-danger-font"><span class="text-muted ml-1 font-ubuntu custom-font-one pb-1">CHN</span></i>
+                            <i class="fas fa-circle  new-info-font"><span class="text-muted ml-1 font-ubuntu custom-font-one pb-1">UK</span></i>
+                        </div>
+                        <img class="img-fluid pt-5" src="Content/images/graph.png" />
+                    </div>
+
+                    <div class="ml-5 box-container bg-white">
+                        <h3 class="ml-2 ">Traffic Source</h3>
+                        <div class="d-flex flex-column align-items-center mt-2">
+                            <img class="img-fluid " src="Content/images/piegraph.png" />
+                        </div>
+
+                        <div class="d-flex flex-column pt-5 custom-font-one ">
+                            <h3 class="ml-2">Visit & Sales Statistics</h3>
+                            <i class="fas fa-circle mt-4 new-primary-font d-flex"><span class="text-muted pl-2">Search Engines</span><span class="text-muted ml-auto">85.7%</span></i>
+                            <i class="fas fa-circle mt-4 new-primary-font d-flex"><span class="text-muted pl-2">Search Engines</span><span class="text-muted ml-auto">85.7%</span></i>
+                            <i class="fas fa-circle mt-4 new-primary-font d-flex"><span class="text-muted pl-2">Search Engines</span><span class="text-muted ml-auto">85.7%</span></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="box-container bg-white">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <h3>Recent Ticket </h3>
+                            </div>
+                            <div class="bg-white table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Assignee</th>
+                                            <th scope="col">Subject</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Last Update</th>
+                                            <th scope="col">Tracking ID</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img class="mr-2 img-fluid face-circle w-25" src="Content/images/face25.jpg" />David Grey</td>
+                                            <td>Amet minim mollit non deserunt ullamco.. </td>
+                                            <td><span class="list-inline-item btn list-btn-status  btn-sm btn-success text-white">Done</span></td>
+                                            <td>26 jun 2017</td>
+                                            <td>WD-12345</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="mr-2 img-fluid face-circle w-25" src="Content/images/face25.jpg" />David Grey</td>
+                                            <td>Amet minim mollit non deserunt ullamco.. </td>
+                                            <td><span class="list-inline-item btn list-btn-status  btn-sm btn-warning text-white">Progress</span></td>
+                                            <td>26 jun 2017</td>
+                                            <td>WD-12345</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="mr-2 img-fluid face-circle w-25" src="Content/images/face25.jpg" />David Grey</td>
+                                            <td>Amet minim mollit non deserunt ullamco.. </td>
+                                            <td><span class="list-inline-item btn list-btn-status  btn-sm btn-info text-white">On Hold</span></td>
+                                            <td>26 jun 2017</td>
+                                            <td>WD-12345</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="mr-2 img-fluid face-circle w-25" src="Content/images/face25.jpg" />David Grey</td>
+                                            <td>Amet minim mollit non deserunt ullamco.. </td>
+                                            <td><span class="list-inline-item btn list-btn-status  btn-sm btn-danger text-white">Rejected</span></td>
+                                            <td>26 jun 2017</td>
+                                            <td>WD-12345</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-container bg-white mt-5">
+                    <div class="d-flex justify-content-between align-items-start w-100 flex-column">
+                        <h3>Recent Updates</h3>
+                        <ul class="d-flex align-items-center mt-3 mb-2 text-grey custom-font-one">
+                            <li><i class="fas fa-user ml-2"></i><span class="ml-2">jack Menqu</span></li>
+                            <li><i class="fas fa-clock ml-2"></i><span class="ml-2">October 3th,2018</span></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <img class="img-fluid w-100" src="Content/images/image1.png" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 ">
+                            <img class="img-fluid w-100" " src="Content/images/image3.png" />
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <img class="img-fluid w-100" " src="Content/images/image2.png" />
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <img class="img-fluid w-100" " src="Content/images/image4.png" />
+                        </div>
+                    </div>
+                    <ul class="d-flex mt-5">
+                        <li class=""><img class="img-fluid face-circle" src="Content/images/smalldpic.png" /></li>
+                        <li class="ml-3 custom-font-one">
+                            <h6>School Websire-Authentication Module</h6>
+                            <span>Its is a long established fact that a reader ....</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box-container bg-white">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <h3>Projects Status </h3>
+                            </div>
+                            <div class="bg-white table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Due Date</th>
+                                            <th scope="col">Progress</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Herman Beck </td>
+                                            <td>May 15 ,2015</td>
+                                            <td>
+                                                <div class="progress " style="height: 10px;">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 65%;  " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            <td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Herman Beck </td>
+                                            <td>May 15 ,2015</td>
+                                            <td>
+                                                <div class="progress " style="height: 10px;">
+                                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 85%;  " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            <td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Herman Beck </td>
+                                            <td>May 15 ,2015</td>
+                                            <td>
+                                                <div class="progress " style="height: 10px;">
+                                                    <div class="progress-bar new-danger-bg" role="progressbar" style="width: 25%;  " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            <td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Herman Beck </td>
+                                            <td>May 15 ,2015</td>
+                                            <td>
+                                                <div class="progress " style="height: 10px;">
+                                                    <div class="progress-bar new-info-bg" role="progressbar" style="width: 95%;  " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            <td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Herman Beck </td>
+                                            <td>May 15 ,2015</td>
+                                            <td>
+                                                <div class="progress " style="height: 10px;">
+                                                    <div class="progress-bar new-warning-bg" role="progressbar" style="width: 35%;  " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            <td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabcontent" id="Form">
+            <div class="sidecontent open">
+                <div class="p-4">
+                    <h3>Form</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
+                        <div class="box-container bg-white">
+                            <h2>Form Style 1</h2><br />
+                            <form class="form-normal">
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">First Name</label>
+                                            <input type="text" class="form-control" placeholder="First name">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Last Name</label>
+                                            <input type="text" class="form-control" placeholder="Last name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mailInput">Email address</label>
+                                    <input type="email" class="form-control" id="mailInput" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Select</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Attachments</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFile" name="filename" />
+                                        <label class="custom-file-label" for="customFile"><span>No File Chosen</span></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-icon-right">Submit<i class="fas fa-paper-plane ml-2"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.4s">
+                        <div class="box-container bg-white">
+                            <h2>Form Style 2</h2><br />
+                            <form class="form-style1">
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label class="label-txt" for="exampleFormControlTextarea1">First Name</label>
+                                            <input type="text" class="form-control input-b-bottom">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label class="label-txt" for="exampleFormControlTextarea1">Last Name</label>
+                                            <input type="text" class="form-control input-b-bottom">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-txt" for="mailInput">Email address</label>
+                                    <input type="email" class="form-control input-b-bottom" id="mailInput">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control input-b-bottom" id="exampleFormControlSelect1">
+                                        <option>Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-txt inputFileLabel" for="">Attachments</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input custom-file-input2 input-b-bottom form-control" id="customFile2" name="filename" />
+                                        <label class="custom-file-label custom-file-label2" for="customFile2"><span>No File Chosen</span></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-txt" for="exampleFormControlTextarea1">Message</label>
+                                    <input type="text" class="form-control input-b-bottom">
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-icon-right mt-3">Submit<i class="fas fa-paper-plane ml-2"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.4s">
+                        <div class="box-container bg-white">
+                            <h2>Payment Form</h2><br />
+                            <form class="form-normal">
+                                <div class="form-group">
+                                    <label class="" for="">Payment Method</label>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item align-top">
+                                            <div class="custom-control custom-radio radio-invisible">
+                                                <input type="radio" id="customRadioPayoneer" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioPayoneer">
+                                                    <img src="Content/images/payment-payoneer.png" />
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-inline-item align-top">
+                                            <div class="custom-control custom-radio radio-invisible">
+                                                <input type="radio" id="customRadioVisa" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioVisa">
+                                                    <img src="Content/images/payment-visa.png" />
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-inline-item align-top">
+                                            <div class="custom-control custom-radio radio-invisible">
+                                                <input type="radio" id="customRadioPaypal" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioPaypal">
+                                                    <img src="Content/images/payment-paypal.png" />
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-inline-item align-top">
+                                            <div class="custom-control custom-radio radio-invisible">
+                                                <input type="radio" id="customRadioMaster" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioMaster">
+                                                    <img src="Content/images/payment-master.png" />
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="" for="">Card Holder Name</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="" for="">Card Number</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="">Month</label>
+                                            <select class="form-control" id="">
+                                                <option>01</option>
+                                                <option>02</option>
+                                                <option>03</option>
+                                                <option>04</option>
+                                                <option>05</option>
+                                                <option>06</option>
+                                                <option>07</option>
+                                                <option>08</option>
+                                                <option>09</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="">Year</label>
+                                            <select class="form-control" id="">
+                                                <option>2020</option>
+                                                <option>2021</option>
+                                                <option>2022</option>
+                                                <option>2023</option>
+                                                <option>2024</option>
+                                                <option>2025</option>
+                                                <option>2026</option>
+                                                <option>2027</option>
+                                                <option>2028</option>
+                                                <option>2029</option>
+                                                <option>2030</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="" for="">CVV&nbsp;<i class="far fa-info-circle" data-toggle="tooltip" data-placement="top" title="3 digit number at the back of your card"></i></label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-icon-right mt-3">Submit<i class="fas fa-paper-plane ml-2"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.4s">
+                        <div class="box-container bg-white">
+                            <h2>Form Style Horizontal</h2><br />
+                            <form class="form-normal">
+                                <div class="form-group row ">
+                                    <label for="exampleFormControlTextarea1" class="col-sm-3 col-form-label mt-2">First Name</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control " placeholder="First name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="exampleFormControlTextarea1" class="col-sm-3 col-form-label mt-2">Last Name</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" placeholder="Last name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="mailInput" class="col-sm-3 col-form-label mt-2">Email</label>
+                                    <div class="col-sm-9">
+                                        <input type="email" class="form-control" id="mailInput" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="exampleFormControlSelect1" class="col-sm-3 col-form-label mt-2">Select</label>
+                                    <div class="col-sm-9">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Select</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-3 col-form-label mt-2">Attachments</label>
+                                    <div class="col-sm-9">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile" name="filename" />
+                                            <label class="custom-file-label" for="customFile"><span>No File Chosen</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="exampleFormControlTextarea1" class="col-sm-3 col-form-label ">Message</label>
+                                    <div class="col-sm-9">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-icon-right">Submit<i class="fas fa-paper-plane ml-2"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.4s">
+                        <div class="box-container bg-white">
+                            <h2>Dialog Box</h2><br />
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialogBoxFailed">
+                                Dialog Failed
+                            </button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialogBoxSuccess">
+                                Dialog Success
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade zoom dialogBox" id="dialogBoxFailed" tabindex="-1" role="dialog" aria-labelledby="dialogBoxFailedLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-zoom modal-sm" role="document">
+                                    <div class="modal-content dialog-content danger">
+                                        <div class="modal-body text-center">
+                                            <i class="fal fa-times-circle top_icon d-block"></i>
+                                            <h1>Oops...</h1>
+                                            <h4>Something went wrong!</h4>
+                                            <button type="button" class="btn custom-gradient-color-two" data-dismiss="modal">OK</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade zoom dialogBox" id="dialogBoxSuccess" tabindex="-1" role="dialog" aria-labelledby="dialogBoxSuccessLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-zoom modal-sm" role="document">
+                                    <div class="modal-content dialog-content success">
+                                        <div class="modal-body text-center">
+                                            <i class="fal fa-check-circle top_icon d-block"></i>
+                                            <h1>Sweet...</h1>
+                                            <h4>You are done successfully!</h4>
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="invoice-container bg-white">
+                            <h2 class="p-3">Invoice</h2>
+                            <header class="header">
+                                <div class="single-row justify-content-between">
+                                    <div class="left">
+                                        <img class=" img-fluid logo-name-purple" src="Content/images/logoname.svg" />
+                                    </div>
+                                    <div class="right">
+                                        <h4>Invoice #4987</h4>
+                                    </div>
+                                </div>
+                                <div class="single-row justify-content-between">
+                                    <div class="left">
+                                        <p>Office 149, 450 South Brand Brooklyn</p>
+                                        <p>San Diego County, CA 91905, USA</p>
+                                        <p>+1 (123) 456 7891, +44 (876) 543 2198</p>
+                                    </div>
+                                    <div class="right">
+                                        <div class="inline-date">
+                                            <p class="min-w-100">Date Issued:</p>
+                                            <p class="min-w-70 font-weight-bold">13 Dec 2019</p>
+                                        </div>
+                                        <div class="inline-date">
+                                            <p class="min-w-100">Due Date:</p>
+                                            <p class="min-w-70 font-weight-bold">23 Apr 2019</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </header>
+                            <main class="content">
+                                <div class="content-padding">
+                                    <div class="single-row justify-content-between">
+                                        <div class="left">
+                                            <h4>Invoice To:</h4>
+                                            <p>
+                                                Jordan Stevenson<br />
+                                                Hall-Robbins PLC<br />
+                                                7777 Mendez Plains, USA<br />
+                                                (616) 865-4180<br />
+                                                testmail@test.com
+                                            </p>
+                                        </div>
+                                        <div class="right">
+                                            <h4>Payment Details:</h4>
+                                            <table class="table table-borderless no-padding">
+                                                <tr>
+                                                    <td>Total Due:</td>
+                                                    <td>$12,110.55</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bank:</td>
+                                                    <td>American Bank</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Branch:</td>
+                                                    <td>New York</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Country:</td>
+                                                    <td>United States</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>IFSC code:</td>
+                                                    <td>BR91905</td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
+                                    </div><br />
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table border-bottom">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th>Task Description</th>
+                                                <th>Rate</th>
+                                                <th>Hours</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Native App Development<br /> Developed a full stack native app using Bootstrap.</td>
+                                                <td>$60.00</td>
+                                                <td>30</td>
+                                                <td>$1,800.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>UI Kit Design<br />Designed a UI kit for native app using Figma.</td>
+                                                <td>$60.00</td>
+                                                <td>20</td>
+                                                <td>$1200.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="content-padding">
+                                    <div class="single-row justify-content-between">
+                                        <div class="left">
+                                            <div class="inline-date">
+                                                <h4 class="min-w-100 font-weight-bold">Salesperson: </h4>
+                                                <h4 class="min-w-70">Alfie</h4>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <h4>Payment Details:</h4>
+                                            <table class="table table-borderless no-padding">
+                                                <tr>
+                                                    <td>Subtotal:</td>
+                                                    <th>$1800</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Discount:</td>
+                                                    <th>$28</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tax:</td>
+                                                    <th>21%</th>
+                                                </tr>
+                                                <tr class="border-bottom">
+                                                    <td></td>
+                                                    <th></th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Total:</td>
+                                                    <th>$1690</th>
+                                                </tr>
+                                            </table>
+
+                                        </div>
+                                    </div><br />
+                                </div>
+                            </main>
+                            <footer class="footer">
+                                <p><b>Note:</b> It was a pleasure working with you and your team. We hope you will keep us in mind for future projects. Thank You!</p>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box-container bg-white">
+                            <h2 class="pb-3">FAQ</h2>
+                            <div id="accordion_search_bar_container" class="search-inline-button mb-3">
+                                <div class="form-group mb-0">
+                                    <input type="search" class="form-control search-input min-w-225px" id="accordion_search_bar" placeholder="Search" />
+                                    <button type="submit" class="btn custom-gradient-color-two"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="accordion default-accordian custom-accordian" id="accordionFAQ">
+                                <div class="card" id="card_one">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <span class="custom-gradient-fnt-color-one">Collapsible Group Item One</span>
+                                                <i class="fas fa-chevron-up"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFAQ">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" id="card_two">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <span class="custom-gradient-fnt-color-two">Collapsible Group Item two</span>
+                                                <i class="fas fa-chevron-up"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" id="card_three">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <span class="custom-gradient-fnt-color-three">Collapsible Group Item three</span>
+                                                <i class="fas fa-chevron-up"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabcontent" id="UI">
+            <div class="sidecontent open">
+                
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="p-4">
+                            <h3>Buttons</h3>
+                        </div>
+                        <div class="box-container bg-white d-flex">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-primary btn-new-palette m-2">Primary</button>
+                                <button type="button" class="btn btn-secondary btn-new-palette m-2">Secondary</button>
+                                <button type="button" class="btn btn-success btn-new-palette m-2">Success</button>
+                                <button type="button" class="btn btn-danger btn-new-palette m-2">Danger</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-warning btn-new-palette m-2">Warning</button>
+                                <button type="button" class="btn btn-info btn-new-palette m-2">Info</button>
+                                <button type="button" class="btn btn-light btn-new-palette m-2">Light</button>
+                                <button type="button" class="btn btn-dark btn-new-palette m-2">Dark</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="p-4">
+                            <h3>Social media icons </h3>
+                        </div>
+                        <div class="box-container bg-white">
+                            <div class=" col-12">
+                                <button type="button" class="btn btn-new-palette youtube-inverse-icon m-2 p-3"><i class="fab fa-youtube"></i></button>
+                                <button type="button" class="btn btn-new-palette facebook-inverse-icon m-2 p-3"><i class="fab fa-facebook-f ml-1 mr-1"></i></button>
+                                <button type="button" class="btn btn-new-palette twitter-inverse-icon m-2 p-3"><i class="fab fa-twitter"></i></button>
+                                <button type="button" class="btn btn-new-palette googlered-inverse-icon m-2 p-3"><i class="fab fa-google-plus-g"></i></button>
+                                <button type="button" class="btn btn-new-palette dribbble-inverse-icon  m-2 p-3"><i class="fab fa-dribbble"></i></button>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" class="btn btn-new-palette youtube-icon m-2 p-3"><i class="fab fa-youtube"></i></button>
+                                <button type="button" class="btn btn-new-palette facebook-icon m-2 p-3"><i class="fab fa-facebook-f ml-1 mr-1"></i></button>
+                                <button type="button" class="btn btn-new-palette twitter-icon m-2 p-3"><i class="fab fa-twitter"></i></button>
+                                <button type="button" class="btn btn-new-palette googlered-icon m-2 p-3"><i class="fab fa-google-plus-g"></i></button>
+                                <button type="button" class="btn btn-new-palette dribbble-icon  m-2 p-3"><i class="fab fa-dribbble"></i></button>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" class="btn btn-new-palette youtube-icon face-circle m-2 p-3"><i class="fab fa-youtube"></i></button>
+                                <button type="button" class="btn btn-new-palette facebook-icon face-circle m-2 p-3"><i class="fab fa-facebook-f ml-1 mr-1"></i></button>
+                                <button type="button" class="btn btn-new-palette twitter-icon face-circle m-2 p-3"><i class="fab fa-twitter"></i></button>
+                                <button type="button" class="btn btn-new-palette googlered-icon face-circle m-2 p-3"><i class="fab fa-google-plus-g"></i></button>
+                                <button type="button" class="btn btn-new-palette dribbble-icon face-circle m-2 p-3"><i class="fab fa-dribbble"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="p-4">
+                            <h3>Button With Text And Icon</h3>
+                        </div>
+                        <div class="box-container bg-white d-flex">
+                            <div class=" col-6">
+                                <button type="button" class="btn btn-new-palette btn-primary m-2 "><i class="fas fa-file-check mr-3"></i>Submit </button>
+                                <button type="button" class="btn btn-success btn-new-palette m-2"><i class="fas fa-upload mr-3"></i>Success</button>
+                                <button type="button" class="btn btn-danger btn-new-palette m-2"><i class="fas fa-exclamation-triangle mr-3"></i>Danger</button>
+                                <button type="button" class="btn btn-warning btn-new-palette m-2"><i class="fas fa-sync-alt mr-3"></i>Warning</button>
+                                <button type="button" class="btn btn-info btn-new-palette m-2">Info<i class="fas fa-print ml-3"></i></button>
+                                <button type="button" class="btn btn-dark btn-new-palette m-2 text-center">Edit<i class="fas fa-file-check ml-3"></i></button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-new-palette btn-inverse-primary m-2 "><i class="fas fa-file-check mr-3"></i>Submit </button>
+                                <button type="button" class="btn btn-inverse-success btn-new-palette m-2"><i class="fas fa-upload mr-3"></i>Success</button>
+                                <button type="button" class="btn btn-inverse-danger btn-new-palette m-2"><i class="fas fa-exclamation-triangle mr-3"></i>Danger</button>
+                                <button type="button" class="btn btn-inverse-warning btn-new-palette m-2"><i class="fas fa-sync-alt mr-3"></i>Warning</button>
+                                <button type="button" class="btn btn-inverse-info btn-new-palette m-2">Info<i class="fas fa-print ml-3"></i></button>
+                                <button type="button" class="btn btn-inverse-dark btn-new-palette m-2 text-center">Edit<i class="fas fa-file-check ml-3"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+          </div>
+        </div>
+
+    <div class="login-page tabcontent" id="login">
+            
+        <section class="box-container bg-white text-center login-width">
+            <img class="log-in-logo" src="Content/images/logoname.svg" />
+            <h3 class="mt-5">Hello! let's get started</h3>
+            <p class="mt-1">Sign in to continue</p>
+            <form class="form-normal">
+                <div class="form-group">
+                    <input type="text" class="form-control " placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control " placeholder="Password">
+                </div>
+
+            </form>
+            <button type="button" class="btn btn-primary btn-new-palette mt-2 "><span>Sign in</span></button>
+            <section class="d-flex align-items-center mt-4 mb-4">
+                <div class="form-check d-flex">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label custom-font-two" for="flexCheckDefault">
+                        Keep me signed in
+                    </label>
+                </div>
+                <h5 class="ml-4">Forgot passsword?</h5>
+            </section>
+            <button type="button" class="btn btn-new-palette facebook-icon mt-2 "><i class="fab fa-facebook-f ml-3 mr-1"></i>Connect using facebook</button>
+            <p class="font-ubuntu h4 mt-3">Don't have an account? <a href="#" class="new-primary-font">Create</a></p>
+        </section>
+   </div>
+                    
+
+
+    <div class="login-page tabcontent" id="errorPage">
+        <div class="error new-primary-bg  d-flex flex-column align-items-center font-ubuntu text-white">
+            <div class="d-flex align-items-center font-ubuntu text-white">
+                <p class="custom-font-three  font-weight-bolder mr-3">404</p>
+                <p class="custom-font-four ">
+                    <span class="font-weight-bold">SORRY</span> !<br />
+                    <span class="custom-font-five ">The page you’re looking for<br /> was not found.</span> 
+                </p>
+            </div>
+            <a href="index.html" class="text-white mt-5">Back to home</a>
+            <p class="mt-5">Copyright © 2018 All rights reserved.</p>
+
+        </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        function openPage(pageName, elmnt,) {
+            var i, tabcontent;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                if (tablinks[i].classList.contains('active')) {
+                    tablinks[i].classList.remove('active')
+                }
+                else {
+                    tablinks[i].classList.remove('active')
+                }
+
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+        document.getElementById("defaultOpen").click();
+
+        function displayNone() {
+            document.getElementById("pageContent").style.display = "none";
+            document.getElementById("head").style.display = "none";
+        }
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.input-b-bottom').focus(function () {
+                $(this).parent().find(".label-txt").addClass('label-focus');
+            });
+            $(".input-b-bottom").focusout(function () {
+                if ($(this).val() == '') {
+                    $(this).parent().find(".label-txt").removeClass('label-focus');
+                };
+                if ($(this).val() != '') {
+                    $(this).parent().find(".label-txt").addClass('label-active');
+                    $(this).parent().find(".label-txt").removeClass('label-focus');
+                };
+            });
+        });
+    </script>
+
+    <script>
+        // Add the following code if you want the name of the file appear on select
+        $(".custom-file-input2").on("change", function () {
+            var fileName2 = $(this).val().split("\\").pop();
+            //$(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+            $(".custom-file-label2 span").html(fileName2);
+            $(".custom-file-label2").addClass("selected");
+            if ($(".custom-file-label2").hasClass("selected")) {
+                $(".inputFileLabel").addClass("label-active")
+            }
+        });
+    </script>
+    <!----------------Form Style1--------------->
+    <!----------------FAQ--------------->
+    <script>
+        (function () {
+            var searchTerm, panelContainerId;
+            // Create a new contains that is case insensitive
+            $.expr[':'].containsCaseInsensitive = function (n, i, m) {
+                return jQuery(n).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
+            };
+
+            $('#accordion_search_bar').on('change keyup paste click', function () {
+                searchTerm = $(this).val();
+                $('#accordionFAQ > .card').each(function () {
+                    panelContainerId = '#' + $(this).attr('id');
+                    $(panelContainerId + ':not(:containsCaseInsensitive(' + searchTerm + '))').hide();
+                    $(panelContainerId + ':containsCaseInsensitive(' + searchTerm + ')').show();
+                });
+            });
+        }());
+    </script>
+
+
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/jquery-migrate-3.0.0.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Content/Libraries/bootstrap-4.2.1/js/bootstrap.min.js"></script>
+    <script src="Scripts/custom-scripts/sidemenu.js"></script>
+    <script src="Content/Libraries/scrollbar/ScrollBar.js"></script>
+    <script src="Content/Libraries/Kendo/Script/kendo.all.min.js"></script>
+    <script src="Content/Libraries/wow/wow.min.js"></script>
+</body>                  
+</html>            

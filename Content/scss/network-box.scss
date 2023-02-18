@@ -1,0 +1,461 @@
+﻿.progress-title {
+    display: inline-block;
+}
+
+.progress--circle {
+    position: relative;
+    /*display: inline-block;*/
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    border-radius: 50%;
+
+    &.circle-small {
+        width: 17px;
+        height: 17px;
+
+        &:before {
+            top: 3px;
+            left: 3px;
+            right: 3px;
+            bottom: 3px;
+        }
+    }
+}
+
+.progress--circle .user-icon {
+    position: absolute;
+    z-index: 99;
+    display: block;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    width: calc(100% - 16px);
+}
+
+.progress--circle:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 9;
+}
+
+.progress--circle:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.progress__number {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    line-height: 1;
+    margin-top: -0.75rem;
+    text-align: center;
+    font-size: $f-24px;
+    color: #777;
+}
+
+.progress--bar.progress--35:after {
+    width: 35%;
+}
+
+.progress--circle.progress--35:after {
+    background-image: linear-gradient(90deg, $white 50%, transparent 50%, transparent), linear-gradient(216deg, $grey-200 50%, $white 50%, $white);
+}
+
+.progress--bar.progress--65:after {
+    width: 65%;
+}
+
+.progress--circle.progress--65:after {
+    background-image: linear-gradient(-36deg, $orange 50%, transparent 50%, transparent), linear-gradient(270deg, $orange 50%, $white 50%, $white);
+}
+
+.progress--bar.progress--100:after {
+    width: 100%;
+}
+
+.progress--circle.progress--100:after {
+    background-image: linear-gradient(90deg, $green 50%, transparent 50%, transparent), linear-gradient(270deg, $green 50%, $green 50%, $green);
+}
+
+.progress--circle.progress--100.blue:after {
+    background-image: linear-gradient(90deg, $sky-blue 50%, transparent 50%, transparent), linear-gradient(270deg, $sky-blue 50%, $sky-blue 50%, $sky-blue);
+}
+
+.user-icon {
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.networkBox {
+    background-color: $white;
+}
+
+.networkdetails {
+    width: 550px;
+    margin: 30px auto;
+    position: relative;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: 51% !important;
+
+    &.branch1 {
+        background: url('../images/branch1.png') no-repeat 50% 50%;
+    }
+
+    &.branch2 {
+        background: url('../images/branch2.png') no-repeat 50% 50%;
+    }
+
+    &.branch3 {
+        background: url('../images/branch3.png') no-repeat 50% 50%;
+    }
+
+    &.branch4 {
+        background: url('../images/branch4.png') no-repeat 50% 50%;
+    }
+
+    &.branch5 {
+        background: url('../images/branch5.png') no-repeat 50% 50%;
+    }
+
+    &.branch6 {
+        background: url('../images/branch6.png') no-repeat 50% 50%;
+    }
+
+    &.branch7 {
+        background: url('../images/branch7.png') no-repeat 50% 50%;
+    }
+
+    &.branch8 {
+        background: url('../images/branch8.png') no-repeat 50% 50%;
+    }
+
+    &.branch9 {
+        background: url('../images/branch9.png') no-repeat 50% 50%;
+    }
+
+    &.branch10 {
+        background: url('../images/branch10.png') no-repeat 50% 50%;
+    }
+}
+
+
+
+.networkdetails {
+    .maincircle {
+        height: 70px;
+    }
+
+    ul {
+        margin-bottom: 0;
+
+        li {
+            position: absolute;
+            align-items: center;
+            width: 170px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                background: $grey-200;
+                border-radius: 30px;
+            }
+
+            h3 {
+                margin: 0px;
+                padding: 0px 0px 5px 0px;
+                line-height: 100%;
+                font-weight: 600;
+                font-size: $f-12px;
+                color: #000;
+            }
+
+            p {
+                margin: 0px;
+                padding: 0px;
+                font-weight: normal;
+                color: #6e8089;
+                font-size: $f-11px;
+                line-height: 100%;
+            }
+
+            span.number {
+                position: absolute;
+            }
+
+            &.net_one {
+                top: 50px;
+                left: calc(50% - 100px);
+                width: 200px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+
+                .progress-title {
+                    order: 2;
+                }
+
+                .expert_details {
+                    margin-bottom: .5rem;
+                    order: 1;
+                }
+
+                &:after {
+                    bottom: -48px;
+                    left: 95px;
+                }
+
+                span.number {
+                    bottom: -35px;
+                    right: 77px;
+                }
+            }
+
+            &.net_two {
+                top: 120px;
+                right: 60px;
+                display: flex;
+
+                &:after {
+                    left: -6px;
+                    bottom: -23px;
+                }
+
+                span.number {
+                    bottom: -20px;
+                    left: 15px;
+                }
+            }
+
+            &.net_three {
+                top: 195px;
+                right: 0px;
+                display: flex;
+
+                &:after {
+                    left: -35px;
+                    top: 46px;
+                }
+
+                span.number {
+                    bottom: 0px;
+                    left: -10px;
+                }
+            }
+
+            &.net_four {
+                bottom: 195px;
+                right: 0px;
+                display: flex;
+
+                &:after {
+                    left: -36px;
+                    top: 18px;
+                }
+
+                span.number {
+                    bottom: 13px;
+                    left: -30px;
+                }
+            }
+
+            &.net_five {
+                bottom: 120px;
+                right: 60px;
+                display: flex;
+
+                &:after {
+                    top: -22px;
+                    left: -4px;
+                }
+
+                span.number {
+                    bottom: 55px;
+                    left: -10px;
+                }
+            }
+
+            &.net_six {
+                bottom: 50px;
+                left: calc(50% - 100px);
+                width: 200px;
+                text-align: center;
+
+                &:after {
+                    top: -48px;
+                    left: 95px;
+                }
+
+                span.number {
+                    top: -30px;
+                    left: 75px;
+                }
+            }
+
+            &.net_seven {
+                bottom: 120px;
+                left: 60px;
+                text-align: right;
+                display: flex;
+
+                &:after {
+                    top: -20px;
+                    right: -5px;
+                }
+
+                span.number {
+                    top: -20px;
+                    right: 15px;
+                }
+            }
+
+            &.net_eight {
+                bottom: 195px;
+                left: 0px;
+                text-align: right;
+                display: flex;
+
+                &:after {
+                    right: -36px;
+                    top: 20px;
+                }
+
+                span.number {
+                    bottom: 40px;
+                    right: -20px;
+                }
+            }
+
+            &.net_nine {
+                top: 195px;
+                left: 0px;
+                text-align: right;
+                display: flex;
+
+                &:after {
+                    right: -35px;
+                    top: 47px;
+                }
+
+                span.number {
+                    top: 15px;
+                    right: -30px;
+                }
+            }
+
+            &.net_ten {
+                top: 120px;
+                left: 60px;
+                text-align: right;
+                display: flex;
+
+                &:after {
+                    right: -4px;
+                    bottom: -23px;
+                }
+
+                span.number {
+                    bottom: -5px;
+                    right: -9px;
+                }
+            }
+
+            &.grey {
+                &:after {
+                    background: $grey-200;
+                }
+
+                span.number {
+                    color: $grey-200;
+                }
+            }
+
+            &.orange {
+                &:after {
+                    background: orange;
+                }
+
+                span.number {
+                    color: orange;
+                }
+            }
+
+            &.blue {
+                &:after {
+                    background: $sky-blue;
+                }
+
+                span.number {
+                    color: $sky-blue;
+                }
+            }
+
+            &.green {
+                &:after {
+                    background: $green;
+                }
+
+                span.number {
+                    color: $green;
+                }
+            }
+
+            &.white {
+                &:after {
+                    background: $white;
+                    border: 1.5px solid $grey-200;
+                }
+
+                span.number {
+                    color: $grey-200;
+                }
+            }
+        }
+    }
+}
+
+.networkdetails ul li.net_seven,
+.networkdetails ul li.net_eight,
+.networkdetails ul li.net_nine,
+.networkdetails ul li.net_ten {
+    .progress-title {
+        order: 2;
+    }
+
+    .expert_details {
+        margin-right: .5rem;
+    }
+}
+
+.networkdetails ul li.net_two,
+.networkdetails ul li.net_three,
+.networkdetails ul li.net_four,
+.networkdetails ul li.net_five {
+    justify-content: flex-end;
+
+    .expert_details {
+        margin-left: .5rem;
+    }
+}
+

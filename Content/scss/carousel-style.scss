@@ -1,0 +1,107 @@
+﻿/*--------------Vertical Carousel------------------------*/
+.vertical-carousel {
+    max-width: calc(100% - 500px);
+    margin: 0px 200px 0px 300px;
+
+    .carousel-indicators {
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        right: auto;
+        bottom: 0;
+        margin: 0 0 0 -280px;
+        width: 250px;
+
+        li {
+            width: 200px;
+            height: auto;
+            margin: 10px 0px;
+            opacity: 1;
+            text-indent: 0;
+            color: $blue;
+            border: 0;
+            font-size: $f-16px;
+            font-weight: $fw-semibold;
+
+            i {
+                font-size: $f-11px;
+                margin-right: 15px;
+            }
+
+            &.active {
+                color: $red;
+
+                i {
+                    text-shadow: 0 0 12px rgba(255, 0, 0, 1);
+                }
+            }
+        }
+    }
+
+    .carousel-item {
+        @extend %transition-5s;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        border: 3px solid $blue;
+        opacity: 0.5;
+        color: $black;
+
+        i {
+            color: $red;
+            font-size: $f-20px;
+        }
+
+        &:hover {
+            opacity: 1
+        }
+    }
+
+    .carousel-control-prev {
+        top: calc(50% - 35px);
+        right: -100px;
+        left: auto;
+    }
+
+    .carousel-control-next {
+        top: calc(50% + 35px);
+        right: -100px;
+        left: auto;
+    }
+
+    .carousel-item-next {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100% 0);
+
+        &.carousel-item-left {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-item-prev {
+        -webkit-transform: translate3d(0,-100%, 0);
+        transform: translate3d(0,-100%, 0);
+
+        &.carousel-item-right {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .active {
+        &.carousel-item-right {
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100% 0);
+        }
+
+        &.carousel-item-left {
+            -webkit-transform: translate3d(0,-100%, 0);
+            transform: translate3d(0,-100%, 0);
+        }
+    }
+}
+/*--------------Vertical Carousel------------------------*/

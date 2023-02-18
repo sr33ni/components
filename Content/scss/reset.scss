@@ -1,0 +1,176 @@
+﻿@import "../Libraries/bootstrap-4.2.1/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('../Libraries/font-awesome/css/all.css');
+@import url('../Libraries/font-awesome/css/fontawesome.css');
+@import "variables.scss";
+$font-family-base: 'IBM Plex Sans', sans-serif;
+
+
+/*-----------Transition Styles-------------*/
+
+%transition-2s {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+%transition-5s {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/*-----------Transition Styles-------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: $font-family-base !important;
+    font-size: 16px;
+    background-color: $white-200;
+     scroll-behavior: smooth;
+}
+
+/*-----------Text Styles-------------*/
+
+a:hover {
+    text-decoration: none;
+}
+
+h1, .h1 {
+    font-size: $f-42px;
+    margin: 0;
+    padding: 0;
+}
+
+h2, .h2 {
+    font-size: $f-32px;
+    margin: 0;
+    padding: 0;
+}
+
+h3, .h3 {
+    font-size: $f-22px;
+    margin: 0;
+    padding: 0;
+}
+
+h4, .h4 {
+    font-size: $f-18px;
+    margin: 0;
+    padding: 0;
+}
+
+h5, .h5 {
+    font-size: $f-16px;
+    margin: 0;
+    padding: 0;
+}
+
+h6, .h6 {
+    font-size: $f-15px;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: $f-14px;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-title {
+    font-weight: $fw-semibold;
+    color: $blue-dark;
+}
+.meduim-title {
+    font-weight: $fw-medium;
+    color: $blue-dark;
+    margin-bottom:0.846rem;
+}
+.description{
+    color:$black-100;
+}
+.text-grey{
+    color: $grey;
+}
+
+/*-----------Text Styles-------------*/
+
+/*-------Placeholder--------*/
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $grey-100 !important;
+    font-weight: $fw-regular;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: $grey-100 !important;
+    font-weight: $fw-regular;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    color: $grey-100 !important;
+    font-weight: $fw-regular;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: $grey-100 !important;
+    font-weight: $fw-regular;
+}
+
+/*-------Placeholder--------*/
+
+/*-------Border Radius--------*/
+
+.border-radius-6 {
+    border-radius:6px;
+}
+
+/*-------Border Radius--------*/
+
+/*-------Custom Widths--------*/
+
+.min-w-70{
+    min-width:70px;
+}
+.min-w-100{
+    min-width:100px;
+}
+.min-w-200{
+    min-width:200px;
+}
+.min-w-300{
+    min-width:300px;
+}
+
+/*-------Custom Widths--------*/
+
+/*-------Custom Heights--------*/
+
+.min-h-100{
+    min-height:100px;
+}
+.min-h-200{
+    min-height:200px;
+}
+.min-h-300{
+    min-height:300px;
+}
+.min-h-400{
+    min-height:400px;
+}
+
+/*-------Custom Heights--------*/

@@ -1,0 +1,68 @@
+﻿.k-calendar {
+    font-size: $f-15px;
+
+    .k-header {
+        background-color: $white;
+
+        .k-nav-prev, .k-nav-next, .k-nav-fast {
+            &:hover {
+                background-color: $silver;
+            }
+        }
+    }
+
+    .k-content {
+        th {
+            background-color: $silver;
+            border: 0;
+            color: $blue;
+        }
+
+        td {
+            &.k-state-hover {
+                background-image: none;
+                background-color: $silver;
+            }
+
+            &.k-state-focused {
+                box-shadow: none;
+            }
+
+            &.k-state-selected {
+                background-image: none;
+                background-color: $blue;
+                box-shadow: none;
+            }
+
+            &.k-today {
+                background-image: none;
+                background-color: $white;
+                -webkit-box-shadow: inset 0 0 0 1px $blue;
+                box-shadow: inset 0 0 0 1px $blue;
+
+                .k-link {
+                    color: $blue;
+                }
+
+                &.k-state-selected {
+                    background-image: none;
+                    background-color: $blue;
+                    border-color: $blue;
+
+                    .k-link {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .k-footer {
+        display: none !important;
+    }
+
+    &.custom-kendo-calendar {
+        border-color: $silver;
+        border-radius: 5px;
+    }
+}

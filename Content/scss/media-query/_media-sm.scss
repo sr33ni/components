@@ -1,0 +1,455 @@
+﻿// Small devices (landscape phones, less than 768px) - max-width: 767.98px
+
+@include media-breakpoint-down(sm) {
+    /*--------Login Styles Start----------*/
+    .login-box-wrapper {
+        padding: 0px;
+        background: $white;
+
+        .login-row {
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .left-box {
+            display: none;
+        }
+
+        .login-box-column {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .login-box {
+            max-width: 100%;
+            width: 100%;
+            float: none;
+            padding: 2rem 2rem;
+            min-height: 100vh;
+            border-radius: 0;
+
+            h1 {
+                span {
+                    display: block;
+                }
+            }
+
+            .form-control {
+                padding: 0.75rem 1.538rem !important;
+            }
+        }
+    }
+
+    .create-account-box {
+        &:before {
+            left: -2rem;
+            right: -2rem;
+            width: calc(100% + 4rem);
+        }
+    }
+    /*--------Login Styles Ends----------*/
+    /*--------Main Header Styles Start----------*/
+    .main-header {
+        .list-right {
+            li {
+                margin-left: 0.5rem;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    /*--------Main Header Styles Ends----------*/
+    /*--------Button Styles Start----------*/
+    .btn {
+        padding: 0.85rem 1rem;
+        min-height: 34px;
+        border-radius: 4px;
+    }
+    /*--------Button Styles Ends----------*/
+    /*--------Input Box Styles Start----------*/
+    .form-control {
+        padding: 0.85rem 1rem;
+        min-height: 34px;
+        border-radius: 4px;
+    }
+    /*--------Input Box Styles Ends----------*/
+    /*--------Search Box Styles Start----------*/
+    .search-box {
+        .fa-search {
+            left: 0.95rem;
+        }
+
+        .search-input {
+            padding-left: 2.5rem;
+        }
+    }
+    /*--------Search Box Styles Ends----------*/
+    /*--------Side Menu Start----------*/
+    .sidemenu {
+        position: fixed;
+        width: 0px;
+        left: -1px;
+
+        .sidemenu-bg {
+            width: 0px;
+            left: -1px;
+        }
+
+        .logo {
+            width: 100%;
+            max-width: 100%;
+            padding: 1rem 1rem 1rem 6rem;
+            background-color: $white-300;
+            max-height: 55px;
+
+            img {
+                left: auto;
+                top: auto;
+                position: relative;
+
+                &.logo-close {
+                    display: none;
+                }
+
+                &.logo-open {
+                    opacity: 1
+                }
+            }
+
+            &.open {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .toggler {
+            top: 0;
+            width: 69px;
+            background-color: $white-300;
+            min-height: auto;
+            max-height: 55px;
+            padding: 12px 26px;
+
+            &.open {
+                width: 69px;
+                max-width: 69px;
+            }
+        }
+
+        .menu-list {
+            padding-top: 5.5rem;
+
+            li {
+                a {
+                    i {
+                        min-width: 69px;
+                    }
+                }
+            }
+        }
+
+        .bottom-box {
+            top: 0;
+            bottom: auto;
+            right: 0;
+            left: auto;
+            width: 69px;
+            padding: 8px 17px;
+            max-height: 55px;
+            z-index: 10;
+            background-color: $white-300;
+
+            &.open {
+                width: 69px;
+                max-width: 69px;
+            }
+        }
+    }
+    /*--------Side Menu Ends----------*/
+    /*--------Main Header Start----------*/
+    .main-header {
+        max-height: unset;
+        padding: calc(54px + 1.313rem) 1.313rem 1.125rem 1.313rem;
+
+        .main-title {
+            margin-bottom: 1rem;
+        }
+    }
+    /*--------Main Header Ends----------*/
+    /*--------Page Wrapper Start----------*/
+    .page-wrapper {
+        padding: calc(150px + 0.125rem) 1.313rem 1.125rem 1.313rem;
+    }
+    /*--------Page Wrapper Ends----------*/
+    /*--------Dashboard Start----------*/
+    .task-overview-wrapper {
+        .task-status-card {
+            max-width: 100%;
+        }
+    }
+    /*--------Dashboard Ends----------*/
+    /*-------------Expert Box Start--------------*/
+    .expert-box {
+        &.truncate-200px {
+            padding-right: 1rem;
+        }
+
+        .right-box {
+            position: relative;
+            right: auto;
+            top: auto;
+            margin-top: 1rem;
+        }
+
+        .ellipsis-dropdown {
+            &.top-right {
+                top: 0.5rem;
+            }
+        }
+    }
+    /*-------------Expert Box End--------------*/
+    /*-------------Network Box Start--------------*/
+    .progress--circle {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+    }
+
+    .networkdetails {
+        width: 300px;
+        height: 300px;
+        margin: 50px auto;
+    }
+
+    .networkdetails {
+        .maincircle {
+            height: 50px;
+        }
+
+        ul {
+
+            li {
+
+                &:after {
+                    width: 6px;
+                    height: 6px;
+                }
+
+                span.number {
+                    font-size: $f-16px;
+                }
+
+                &.net_one {
+                    top: -16px;
+                    left: calc(50% - 100px);
+
+                    &:after {
+                        bottom: -48px;
+                        left: 95px;
+                    }
+
+                    span.number {
+                        bottom: -35px;
+                        right: 77px;
+                    }
+                }
+
+                &.net_two {
+                    top: 44px;
+                    right: -46px;
+
+                    &:after {
+                        left: -6px;
+                        bottom: -23px;
+                    }
+
+                    span.number {
+                        bottom: -20px;
+                        left: 15px;
+                    }
+                }
+
+                &.net_three {
+                    top: 85px;
+                    right: -92px;
+
+                    &:after {
+                        left: -35px;
+                        top: 46px;
+                    }
+
+                    span.number {
+                        bottom: -15px;
+                        left: -15px;
+                    }
+                }
+
+                &.net_four {
+                    bottom: 103px;
+                    right: -93px;
+
+                    &:after {
+                        left: -36px;
+                        top: 18px;
+                    }
+
+                    span.number {
+                        bottom: -5px;
+                        left: -15px;
+                    }
+                }
+
+                &.net_five {
+                    bottom: 44px;
+                    right: -45px;
+
+                    &:after {
+                        top: -22px;
+                        left: -4px;
+                    }
+
+                    span.number {
+                        bottom: 25px;
+                        left: -5px;
+                    }
+                }
+
+                &.net_six {
+                    bottom: -18px;
+                    left: calc(50% - 100px);
+
+                    &:after {
+                        top: -48px;
+                        left: 95px;
+                    }
+
+                    span.number {
+                        top: -25px;
+                        left: 77px;
+                    }
+                }
+
+                &.net_seven {
+                    bottom: 45px;
+                    left: -46px;
+
+                    &:after {
+                        top: -20px;
+                        right: -5px;
+                    }
+
+                    span.number {
+                        top: -20px;
+                        right: 15px;
+                    }
+                }
+
+                &.net_eight {
+                    bottom: 104px;
+                    left: -94px;
+
+                    &:after {
+                        right: -36px;
+                        top: 20px;
+                    }
+
+                    span.number {
+                        bottom: 20px;
+                        right: -20px;
+                    }
+                }
+
+                &.net_nine {
+                    top: 88px;
+                    left: -94px;
+
+                    &:after {
+                        right: -35px;
+                        top: 43px;
+                    }
+
+                    span.number {
+                        top: 15px;
+                        right: -20px;
+                    }
+                }
+
+                &.net_ten {
+                    top: 44px;
+                    left: -46px;
+
+                    &:after {
+                        right: -4px;
+                        bottom: -23px;
+                    }
+
+                    span.number {
+                        bottom: -5px;
+                        right: -9px;
+                    }
+                }
+            }
+        }
+    }
+    /*-------------Network Box Ends--------------*/
+    /*--------Vertical Carousel Start----------*/
+    .vertical-carousel {
+        max-width: calc(100% - 15px);
+        margin: 0px 15px 0px 0px;
+        position: relative;
+
+        .carousel-indicators {
+            margin: 0;
+            top: auto;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+            padding: 1rem 1rem;
+            justify-content:flex-end;
+            background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+
+            li {
+                display: none;
+                width: 100%;
+                max-width: 100%;
+                background: transparent;
+                font-size: $f-18px;
+                color: $white;
+                margin:0;
+                pointer-events:none;
+
+                i {
+                    display: none;
+                }
+
+                &.active {
+                    display: block;
+                    color: $white;
+                }
+            }
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            right: -15px;
+            background-color: $white;
+            opacity: 1;
+            z-index: 15;
+        }
+
+        .carousel-control-prev {
+            top: calc(50% - 35px);
+        }
+
+        .carousel-control-next {
+            top:auto;
+            bottom: calc(50% - 35px);
+        }
+    }
+    /*--------Vertical Carousel End----------*/
+}

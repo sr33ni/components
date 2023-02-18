@@ -1,0 +1,31 @@
+﻿.alert{
+    max-width: 900px;
+    margin: auto;
+    color:$white;
+    &.alert-warning {
+        background: $warning-bg;
+        border-color: $warning;
+    }
+    &.alert-success {
+        background: $success-bg;
+        border-color: $success;
+    }
+    &.alert-danger {
+        background: $danger-bg;
+        border-color: $danger;
+    }
+    &.alert-info {
+        background: $info-bg;
+        border-color: $info;
+    }
+    .close{
+        font-weight:300;
+        color:$white;
+        opacity:1 !important;
+        box-shadow:none !important;
+        outline:none !important;
+        &:hover{
+            opacity:1 !important;
+        }
+    }
+}

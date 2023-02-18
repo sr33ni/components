@@ -1,0 +1,63 @@
+﻿// Medium devices (tablets, less than 992px) - max-width: 991.98px
+@include media-breakpoint-down(md) {
+
+    html {
+        font-size: 12px;
+    }
+    /*--------Login Start----------*/
+    .login-box-wrapper {
+        padding: 2rem 3rem 2rem 3rem;
+    }
+    /*--------Login End----------*/
+    /*--------Main Header Start----------*/
+    .btn.btn-icon-right {
+        i {
+            margin-left: 0;
+        }
+    }
+    /*--------Main Header End----------*/
+    /*--------Map View Start----------*/
+    .mapview-container {
+        .left-box {
+            width: 320px;
+            min-width: 320px;
+            max-width: 320px;
+        }
+
+        .right-box {
+            width: calc(100% - 321px);
+            min-width: calc(100% - 321px);
+        }
+    }
+    /*--------Map View End----------*/
+    /*--------Vertical Carousel Start----------*/
+    .vertical-carousel {
+        max-width: calc(100% - 190px);
+        margin: 0px 40px 0px 150px;
+
+        .carousel-indicators {
+            margin: 0 0 0 -140px;
+            width: 130px;
+
+            li {
+                width: 130px;
+            }
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            width: 30px;
+            height: 30px;
+            right: -45px;
+        }
+
+        .carousel-control-prev {
+            top: calc(50% - 20px);
+        }
+
+        .carousel-control-next {
+            top: calc(50% + 20px);
+        }
+    }
+
+        /*--------Vertical Carousel End----------*/
+    }

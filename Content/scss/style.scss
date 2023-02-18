@@ -1,0 +1,880 @@
+﻿@import "variables.scss";
+@import "reset.scss";
+@import "login.scss";
+@import "sidemenu.scss";
+@import "main-header.scss";
+@import "status-style.scss";
+@import "buttons.scss";
+@import "custom-dropdown.scss";
+@import "form-style.scss";
+@import "searchbox.scss";
+@import "modal.scss";
+@import "cards.scss";
+@import "progressbar.scss";
+@import "inline-list.scss";
+@import "navtabs.scss";
+@import "table-style.scss";
+@import "scrollspy.scss";
+@import "step-wizard-form.scss";
+@import "accordian.scss";
+@import "sticky-notes.scss";
+@import "alerts.scss";
+@import "carousel-style.scss";
+@import "kendo-tools.scss";
+@import "network-box.scss";
+@import "invoice.scss";
+@import "custom-radio.scss";
+@import "time-line.scss";
+@import "new-palette.scss";
+@import "list.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+.font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+.page-wrapper {
+    position: relative;
+    padding: calc(100px + 1.125rem) 3.313rem 1.125rem calc(70px + 3.313rem);
+    max-width: 100%;
+    display: block;
+    overflow-x: hidden;
+}
+
+.scroll-wrapper.scrollbar-inner.newtask-scrollbar {
+    max-height: calc(100vh - 270px);
+}
+
+.inrto-code span {
+    display: block;
+}
+
+.click {
+    position: relative;
+
+    .copy-content {
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+        background-color: $black;
+        padding: 0.25rem 0.75rem;
+        border-radius: 5px;
+        color: $white;
+        font-size: $f-14px;
+        cursor: pointer;
+        display: none;
+        opacity: 0;
+        @extend %transition-5s;
+    }
+
+    &:hover {
+        .copy-content {
+            display: block;
+            opacity: 1;
+        }
+    }
+}
+
+
+
+
+/*-------------Task Board Styles Start--------------*/
+
+/*-----Task Status List Start------*/
+
+.task-status-list {
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $silver;
+        padding: 1.153rem 0rem;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        .task-count {
+            color: $grey;
+            font-weight: $fw-semibold;
+            font-size: $f-12px;
+            display: inline-flex;
+            align-items: center;
+
+            i {
+                margin-left: 1.076rem;
+                font-size: $f-20px;
+            }
+        }
+    }
+
+    &.left-align {
+        li {
+            justify-content: flex-start;
+            padding: 0.5rem 0rem;
+        }
+    }
+}
+
+.task-boards-row {
+    .task-status-list {
+        margin-bottom: 1rem;
+    }
+}
+
+/*----Task Status List End-----*/
+/*-----Participants List Start-----*/
+
+.participants-list {
+    margin: 0px;
+    width: 100%;
+    padding: 0;
+    height: 30px;
+
+    li {
+        width: 30px;
+        min-width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        overflow: hidden;
+        margin-right: 8px;
+        display: inline-flex;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &.participants-list-conjusted {
+        padding-left: 12px;
+
+        li {
+            margin-left: -12px;
+            margin-right: 0;
+        }
+    }
+}
+
+/*-----Participants List End----*/
+
+/*------Count Inline List End------*/
+
+.count-list {
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+
+    li {
+        color: $grey-100;
+        font-size: $f-13px;
+
+        i {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .progress {
+        width: 25px;
+    }
+
+    .status-text {
+        font-size: $f-12px;
+        font-weight: $fw-medium;
+    }
+}
+
+
+/*------Count Inline List End------*/
+
+
+/*-------------Task Board Styles end--------------*/
+
+/*-------------Dash Board Styles Start--------------*/
+
+
+.task-percentage {
+    font-weight: 500;
+    font-size: $f-12px;
+    line-height: $f-16px;
+}
+
+.task-status {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+    &.success {
+        background: #E4FFED;
+
+        i {
+            color: #1CD265;
+        }
+    }
+
+    &.warning {
+        background: #FFF3EF;
+
+        i {
+            color: #FF6032;
+        }
+    }
+
+    &.progrs {
+        background: #EAF8FF;
+
+        i {
+            color: #1BB1F0;
+        }
+    }
+
+    &.assigned {
+        background: #EFEFFF;
+
+        i {
+            color: #4E3EE8;
+        }
+    }
+
+    i {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+.task-number {
+    font-size: $f-32px;
+}
+
+.task-status-text {
+    font-size: $f-13px;
+    line-height: $f-17px;
+    color: $grey;
+}
+
+.single-item {
+    /*display: flex;
+    justify-content: space-between;*/
+    border-bottom: 1px solid #EAEAF3;
+    padding: 1rem 0;
+
+    &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .progress {
+        height: 35px;
+    }
+
+    .task-progress-date {
+        color: #363636;
+        font-weight: 500;
+        font-size: $f-13px;
+        margin-bottom: 0;
+
+        li {
+            font-weight: 400;
+            /*padding-left: 0.5rem;*/
+            color: $grey;
+
+            &.separator-line {
+                &:before {
+                    content: '';
+                    display: inline-flex;
+                    width: 1px;
+                    height: 10px;
+                    background: $grey;
+                    margin-right: 0.5rem;
+                }
+            }
+
+            &:first-child {
+                color: $black-100;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .participants-list {
+        max-width: 120px;
+        min-width: 120px;
+        text-align: right;
+    }
+}
+
+.task-title {
+    margin-left: 17px;
+
+    h6 {
+        font-size: $f-14px;
+        font-weight: 500;
+    }
+}
+
+.subhead {
+    font-weight: 500;
+    font-size: $f-16px;
+    color: $blue-dark;
+}
+
+.text-danger {
+    color: $red;
+}
+
+.text-success {
+    color: $green;
+}
+
+.single-item-content {
+    width: calc(100% - 120px);
+}
+
+
+.view-all-btn {
+    font-weight: 500;
+    font-size: $f-12px;
+    line-height: $f-16px;
+    color: $blue;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+.sub-heading {
+    font-weight: 600;
+    font-size: $f-12px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    color: $dark-font-color;
+    text-transform: uppercase;
+    margin-bottom: $f-14px;
+    display: block;
+}
+
+.custom-row {
+    margin: 0 -8px;
+}
+
+.custom-column {
+    padding: 0 8px !important;
+}
+
+.section-margin-top {
+    margin-top: 48px;
+}
+
+.section-margin-bottom {
+    margin-bottom: 48px;
+}
+/*.card-height{
+    height:calc(100% - 80px);
+}*/
+.scroll-wrapper.scroll-height {
+    max-height: calc(100vh - 92px);
+}
+
+.graph-height {
+    background-image: url('../images/task-graph.png');
+    background-repeat: no-repeat;
+    height: 334px;
+    width: 100%;
+}
+/*-------------Dash Board Styles end--------------*/
+/*-------------Team List Styles Start--------------*/
+.box-container {
+    padding: 1.538rem;
+    border: 1px solid $silver-200;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/*-------------Team List Styles Start--------------*/
+/*************** Task details *************/
+.tag-div {
+    padding-left: 0;
+
+    li {
+        margin-bottom: 34px;
+    }
+}
+
+.tag {
+    background: #F7F7F7;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: $f-14px;
+    line-height: 18px;
+    color: $comments-text;
+    padding: 15px 20px;
+
+    img {
+        width: 26px;
+        height: 26px;
+        margin-right: 10px;
+    }
+
+    label {
+        font-size: $f-14px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+}
+
+.task-progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .progress {
+        width: 80%;
+        border-radius: 8px;
+        height: 0.5rem;
+        background: #F7F7F7;
+
+        .progress-bakr {
+            border-radius: 8px;
+            background: $bg-danger-light;
+        }
+    }
+
+    label {
+        margin: 0;
+        display: inline-block;
+    }
+}
+
+.mark-as-complete {
+    background: #F1F0FF;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: $f-15px;
+    line-height: 19px;
+    color: $blue;
+    padding: $f-15px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+
+    &:active, &:focus {
+        border: none;
+    }
+}
+
+.light-text {
+    color: $light-font-color;
+    font-weight: normal;
+    font-size: $f-12px;
+    line-height: $f-16px;
+}
+
+.sub-head-light {
+    font-weight: normal;
+    font-size: $f-14px;
+    line-height: $f-18px;
+    color: $light-font-color;
+}
+
+.header-margin {
+    margin-bottom: 25px;
+}
+
+.light-btn {
+    color: $btn-light;
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+}
+
+.item-equal-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-btn {
+    background: $progress-bg;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: $f-13px;
+    line-height: $f-18px;
+    padding: 5px 12px;
+    color: $text-progress;
+    border: 0;
+}
+
+.large-font {
+    font-weight: 500;
+    font-size: $f-32px;
+    line-height: $f-36px;
+    color: $dark-font-color;
+}
+
+.comments {
+    font-weight: normal;
+    font-size: $f-14px;
+    line-height: $f-21px;
+    color: $comments-text;
+}
+
+.comments-tab {
+    margin-top: -6px;
+
+    li {
+        .nav-link.active, .nav-link:hover {
+            color: $black-100;
+        }
+    }
+}
+
+.comments-wrapper {
+    padding-left: 0;
+
+    .profile-pic {
+        width: 35px;
+        height: 35px;
+    }
+
+    .comment-list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: $f-30px;
+    }
+
+    .comment-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: $f-10px;
+
+        .name {
+            font-weight: 500;
+            font-size: $f-15px;
+            line-height: $f-16px;
+            color: $black;
+        }
+
+        .date {
+            font-size: $f-12px;
+            line-height: $f-16px;
+            text-align: right;
+            color: $grey;
+        }
+    }
+}
+
+.thumbnail-100 {
+    li {
+        max-width: 100px;
+    }
+}
+
+.btn-wrapper {
+
+    .dropdown-toggle {
+        margin-left: $f-16px;
+    }
+}
+
+.btn-left-arrow {
+    color: $dark-font-color;
+    background: transparent;
+    border: 0;
+    margin-right: 6px;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        border: 0;
+        outline: none;
+    }
+}
+
+.attatchment-list {
+    li {
+        margin-top: 1rem;
+    }
+}
+
+.navtab-normal {
+    .nav-item {
+        .nav-link {
+            padding-top: 0;
+        }
+    }
+}
+
+.comment-box {
+    color: $grey-100;
+    position: relative;
+
+    .comment-input {
+        background: $white;
+        border: 1px solid $input-border;
+        box-sizing: border-box;
+        border-radius: 8px;
+        height: 48px;
+    }
+
+    .comment-icons {
+        position: absolute;
+        right: 17px;
+        top: 10px;
+        background: $white;
+        padding-left: 0.5rem;
+
+        img {
+            margin-left: $f-15px;
+        }
+    }
+}
+
+.border-grey-bottom {
+    border-bottom: 1px solid;
+    border-color: $table-border-color;
+    margin-bottom: $f-29px;
+}
+/*-------------Map View Start--------------*/
+.mapview-container {
+    padding: 0;
+    overflow: hidden;
+    max-height: calc(100vh - 160px);
+    display: flex;
+
+    .left-box {
+        width: 500px;
+        min-width: 500px;
+        max-width: 500px;
+        border-right: 1px solid $silver;
+        position: relative;
+        padding-bottom: 1.538rem;
+
+        .outdent-dropdown {
+            position: absolute;
+            right: 1.384rem;
+            top: 0.8rem;
+        }
+
+        .nav-tabs {
+            padding: 0.75rem 1.25rem 0rem 1.25rem;
+            padding-right: 45px;
+        }
+
+        .search-box-outer {
+            padding: 1.25rem 1.25rem 0rem 1.25rem;
+        }
+
+        .task-status-list {
+            margin-bottom: 0.5rem;
+
+            li {
+                padding: 0.75rem 1.25rem;
+            }
+        }
+
+        .single-item {
+            margin: 0 1.25rem 0rem 1.25rem;
+            position: relative;
+            z-index: 10;
+
+            &:hover {
+                background: $white-500;
+            }
+
+            &:before, &:after {
+                position: absolute;
+                content: "";
+                width: 1.25rem;
+                top: -1px;
+                bottom: -1px;
+                background: $white-500;
+                opacity: 0;
+                z-index: 1;
+            }
+
+            &:before {
+                left: -1.25rem;
+            }
+
+            &:after {
+                right: -1.25rem;
+            }
+
+            &:hover:before, &:hover:after {
+                opacity: 1;
+            }
+        }
+
+        .scroll-wrapper.task-list-box-h.scrollbar-inner {
+            max-height: calc(100vh - 370px);
+
+            .scroll-element.scroll-y {
+                right: 9px;
+            }
+        }
+    }
+
+    .right-box {
+        width: calc(100% - 501px);
+        min-width: calc(100% - 501px);
+        padding: 1.538rem;
+
+        .map-box {
+            max-height: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            background: url('../images/map-lg.png') center;
+            background-size: cover;
+        }
+    }
+}
+
+/*-------------Map View End--------------*/
+
+/*-------------Expert Box Start--------------*/
+.expert-box {
+    padding: 1rem 0rem 1rem 0rem;
+    padding-left: 60px;
+    position: relative;
+    border-bottom: 1px solid $silver;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    .expert-circle {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 1rem;
+        overflow: hidden;
+        width: 48px;
+        min-width: 48px;
+        height: 48px;
+        display: block;
+        border-radius: 40px;
+    }
+
+    h4 {
+        color: $blue;
+        font-weight: $fw-bold;
+        font-size: $f-18px;
+        margin-bottom: 0.25rem;
+    }
+
+    &.truncate-200px {
+        padding-right: 250px;
+    }
+
+    .right-box {
+        position: absolute;
+        content: "";
+        top: 1rem;
+        right: 2rem;
+    }
+
+    .ellipsis-dropdown {
+        &.top-right {
+            position: absolute;
+            content: "";
+            top: 1rem;
+            right: 0;
+        }
+    }
+}
+
+.seperator-list {
+    margin-bottom: 0.5rem;
+
+    li {
+        position: relative;
+        padding-right: 0.75rem;
+        color: $grey;
+        font-size: $f-14px;
+
+        &:after {
+            position: absolute;
+            content: "";
+            top: 0.35rem;
+            width: 1px;
+            height: 0.95rem;
+            background: $grey-100;
+            right: 0rem;
+        }
+
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+/*-------------Expert Box End--------------*/
+
+
+
+/*-------------Count Down Start--------------*/
+
+.countdown-box {
+    text-align: center;
+    color: $black-100;
+    font-size: $f-32px;
+    font-weight: $fw-bold;
+
+    span {
+        color: $grey;
+        font-weight: $fw-regular;
+        font-size: $f-20px;
+        margin-right: 0.5rem;
+    }
+}
+
+/*-------------Count Down End--------------*/
+
+
+/*-------------Count Up Numbers Start--------------*/
+.counter-up-box {
+    .count-up-inner {
+        color: $grey;
+        font-weight: $fw-regular;
+        font-size: $f-17px;
+
+        .icon-count {
+            color: $blue;
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        h6 {
+            color: $black-100;
+            font-size: $f-32px;
+            margin-bottom: 0.25rem;
+            font-weight: $fw-bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: $f-22px;
+            }
+        }
+    }
+}
+
+/*-------------Count Up Numbers End--------------*/
+
+
+
+@import "responsive-style.scss";
+@import "mobile-styles.scss";

@@ -1,0 +1,100 @@
+﻿/*-----Task Thumb Card Styles Start------*/
+
+.task-thumb-card {
+    background:$white;
+    border: 1px solid $silver-200;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    margin-bottom: 1.076rem;
+    overflow: hidden;
+
+    .card-header {
+        padding: 1.25rem;
+
+        .task-date {
+            display: block;
+            font-weight: $fw-regular;
+            font-size: $f-13px;
+            color: $grey;
+        }
+
+        .ellipsis-dropdown {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+        }
+    }
+
+    .card-body {
+        padding: 0rem 1.25rem 1.25rem 1.25rem;
+        position: relative;
+        font-weight: $fw-medium;
+        font-size: $f-14px;
+        color: rgba(0, 0, 0, 0.8);
+
+        .location {
+            display: block;
+            font-weight: $fw-regular;
+            font-size: $f-13px;
+            margin-top: 0.923rem;
+
+            span {
+                color: $grey;
+            }
+        }
+    }
+
+    .card-footer {
+        padding: 1rem 1.25rem;
+        border-color: $silver;
+        display: flex;
+        flex-flow: wrap;
+        justify-content:space-between;
+        .col-left{
+            min-width: 30%;
+            max-width: 100%;
+            .participants-list{
+                margin-right:12px;
+            }
+        }
+        .col-right{
+            min-width: auto;
+            max-width: 100%;
+        }
+    }
+}
+
+.task-status-card {
+    background: $white;
+    border: 1px solid $silver-200;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    max-width: 160px;
+    /*
+    min-width: 160px;*/
+    overflow: hidden;
+
+    &:hover {
+        border: 1px solid #F2F2F2;
+        box-shadow: 4px 6px 42px rgba(0, 0, 71, 0.09);
+    }
+
+    .card-body {
+        padding-bottom: 0 !important;
+    }
+
+    .card-footer {
+        padding-top: 0;
+    }
+
+    .task-status-text {
+        width: 65px;
+    }
+}
+
+.card-body-custom {
+    padding: 0rem 0.5rem 1.25rem 1.25rem !important;
+}
+
+/*-----Task Thumb Card Styles End------*/

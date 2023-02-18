@@ -1,0 +1,88 @@
+﻿.custom-kendo-dropdown {
+    background-color: $white;
+
+    .k-dropdown-wrap {
+        background-color: $white;
+        border-color: $input-border;
+        border-radius: 8px;
+
+        .k-input {
+            padding: 0.75rem 1rem;
+            height: auto;
+            text-indent: 0;
+            line-height: unset;
+            color: $grey-100;
+            font-weight: $fw-medium;
+            font-size: $f-15px;
+        }
+
+        .k-select {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            .k-icon {
+                background-image: url('../images/dropdown-caret.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 1rem;
+            }
+        }
+
+        &.k-state-focused {
+            box-shadow: $input-focus-boxshadow;
+            border-color: $input-focus-border-color;
+        }
+    }
+}
+
+
+.k-animation-container {
+    .k-popup.k-list-container {
+        padding: 0.75rem;
+        background-color: $white;
+        border-color: $silver;
+        border-radius: 8px;
+        min-width: 170px;
+        box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.03);
+
+        .k-list {
+            .k-item {
+                color: $grey-100;
+                font-weight: $fw-medium;
+                font-size: $f-15px;
+
+                &.k-state-selected, &.k-state-hover {
+                    background-color: $blue;
+                    color: $white;
+                    background-image: none;
+                }
+
+                &.k-state-focused {
+                    background-image: none;
+                    background-color: $blue;
+                    color: $white;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .k-list-filter {
+            .k-textbox {
+                padding-right: 30px;
+            }
+
+            .k-i-search {
+                background-image: url('../images/search.png');
+                background-position: center;
+            }
+        }
+    }
+}
+
+.kendo-no-border{
+    .k-dropdown-wrap{
+        border:0 !important;
+        box-shadow:none !important;
+    }
+}

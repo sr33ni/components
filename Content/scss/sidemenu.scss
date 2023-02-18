@@ -1,0 +1,305 @@
+﻿.sidemenu {
+    position: absolute;
+    content: "";
+    height: 100%;
+    min-height: 100%;
+    left: 0px;
+    top: 0px;
+    width: 80px;
+    bottom: 0px;
+    background-color: $sidemenu-bg;
+    z-index: 99;
+    overflow-x: hidden;
+    @extend %transition-5s;
+
+
+
+    .sidemenu-bg {
+        position: fixed;
+        min-height: 100vh;
+        left: 0px;
+        top: 0px;
+        width: 80px;
+        bottom: 0px;
+        background-color: $sidemenu-bg;
+        z-index: 5;
+        overflow: hidden;
+        border-right: 1px solid $sidemenu-border-color;
+        @extend %transition-5s;
+    }
+
+    &.open {
+        width:299px;
+
+        .sidemenu-bg {
+            width: 300px;
+        }
+    }
+
+    .logo {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 99px;
+        max-width: 60px;
+        display: block;
+        padding: 3.076rem 2.65rem;
+        background-color: $white;
+        z-index: 10;
+        @extend %transition-5s;
+
+        img {
+            position: fixed;
+            left: 1.45rem;
+            top: 1.56rem;
+            @extend %transition-5s;
+        }
+
+        .logo-open {
+            opacity: 0;
+        }
+
+        &.open {
+            width: 299px;
+            max-width: 299px;
+
+
+
+            .logo-close {
+                opacity: 0;
+            }
+
+            .logo-open {
+                opacity: 1;
+            }
+        }
+    }
+
+    .toggler {
+        
+        left: 2rem;
+        top: 3.6rem;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        min-height: 60px;
+        width: 20px;
+        max-width: 299px;
+        text-align: center;
+        background-color: $white;
+        z-index: 10;
+        @extend %transition-5s;
+
+        &.open {
+            width: 0px;
+            margin-left:0px;
+            
+        }
+    }
+
+    .toggle-btn {
+        width: 15px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        cursor: pointer;
+
+        span {
+            background-color: $sidemenu-toggle-btn-color;
+            width: 17px;
+            height: 2px;
+            display: block;
+            margin: 2px auto;
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+            @extend %transition-2s;
+        }
+
+        &:hover {
+            span {
+                background-color: $sidemenu-toggle-btn-color-hover;
+            }
+        }
+
+        &.open {
+            .topbar {
+                margin-left: -2px;
+                margin-top: -1px;
+                -moz-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+
+            .middlebar {
+                opacity: 0;
+            }
+
+            .botttombar {
+                margin-top: -10px;
+                margin-left: -2px;
+                -moz-transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .menu-list {
+        padding-top: 6rem;
+        padding-bottom: 5rem;
+        background-color: $white;
+        position: relative;
+        z-index: 9;
+
+        li {
+            margin-bottom: 10px;
+            min-width: 80px;
+
+            a {
+                display: flex;
+                align-items: center;
+                color: $sidemenu-link-color;
+                font-size: $f-17px;
+                @extend %transition-2s;
+
+                i {
+                    font-size: $f-18px;
+                    padding: 1rem;
+                    min-width: 80px;
+                    text-align: center;
+                }
+
+                &:hover {
+                    color: $sidemenu-link-color-hover;
+                }
+
+                .fa-bell {
+                    position: relative;
+
+                    .notifi-dot {
+                        position: absolute;
+                        margin-left: 0rem;
+                        margin-top: 0rem;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 4px;
+                        background-color: $blue;
+                        border: 1px solid $white;
+                    }
+                }
+
+                &.active {
+                    color: $sidemenu-link-color-hover;
+                }
+            }
+        }
+    }
+
+    .bottom-box {
+        position: fixed;
+        left: 0rem;
+        bottom: 0;
+        width: 99px;
+        padding: 20px 30px;
+        background-color: $white;
+        z-index: 9;
+        @extend %transition-5s;
+
+        .sidemenu-user-circle {
+            width: 36px;
+            min-width: 36px;
+            height: 36px;
+            display: block;
+            overflow: hidden;
+            border-radius: 18px;
+            border: 2px solid $blue-100;
+        }
+
+        &.open {
+            width: 299px;
+            max-width: 299px;
+        }
+    }
+}
+
+
+
+.sidemenu-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    height: 0;
+    @extend %transition-5s;
+    z-index: 11;
+
+    &.open {
+        opacity: 1;
+        min-height: 100vh;
+        max-height: 100vh;
+    }
+}
+
+.sidecontent {
+    @extend %transition-5s;
+    margin-left: 0px;
+
+    &.open {
+        margin-left: 220px;
+    }
+}
+.sidecontent-icon {
+    @extend %transition-5s;
+    margin-left: 8px;
+
+    &.open {
+        margin-left: 0px;
+    }
+}
+
+.dis-play {
+    display: none;
+    @extend %transition-2s;
+
+    &.open {
+        @extend %transition-2s;
+        position:absolute;
+        display: block;
+        margin-left: 30px;
+        width: 200px;
+
+    }
+}
+.dis-play-img {
+    display: none;
+
+    @extend %transition-2s;
+
+    &.open {
+        
+        @extend %transition-5s;
+        display: block;
+    }
+}
+.tabcontent {
+    display: none;
+}
+
+.tablink {
+    cursor:pointer;
+}
+.display-text{
+    position:absolute;
+    left:100px;
+}

@@ -1,0 +1,125 @@
+﻿
+/*-------------List Status Start--------------*/
+.list-status{
+    color:$blue-dark;
+    letter-spacing:0.2rem;
+    font-weight:$fw-semibold;
+    font-size:$f-12px;
+    text-transform:uppercase;
+    padding:0 !important;
+    min-height:auto;
+    height:auto;
+    i{
+        font-size:$f-10px;
+        margin-right:0.5rem;
+    }
+    &.new{
+        i{
+            color:$new !important;
+        }
+    }
+    &.in-progress{
+        i{
+            color:$in-progress !important;
+        }
+    }
+    &.review{
+        i{
+            color:$review !important;
+        }
+    }
+    &.completed{
+        i{
+            color:$completed !important;
+        }
+    }
+}
+
+/*-------------List Status End--------------*/
+
+
+/*-------------Button Status Start--------------*/
+.list-btn-status{
+    color:$blue-dark;
+    font-weight:$fw-medium;
+    font-size:$f-12px;
+    text-transform:capitalize;
+    min-height:auto;
+    height:auto;
+    margin-bottom:0.5rem;
+    border-radius:5px !important;
+    box-shadow:none !important;
+    outline:none !important;
+    i{
+        font-size:$f-10px;
+        margin-right:0.5rem;
+    }
+    &.default{
+        font-weight:$fw-regular !important;
+        color:$default !important;
+        background:$default-status-bg !important;
+        background-color:$default-status-bg !important;
+        &:hover, &:focus{
+            color:$default !important;
+            background:$default-status-bg !important;
+            background-color:$default-status-bg !important;
+        }
+    }
+    &.btn-outline-default{
+        border-color:$default !important;
+    }
+    &.success{
+        color:$success !important;
+        background:$success-status-bg !important;
+        background-color:$success-status-bg !important;
+        &:hover, &:focus, &:active{
+            color:$success !important;
+            background:$success-status-bg !important;
+            background-color:$success-status-bg !important;
+        }
+    }
+    &.btn-outline-success{
+        border-color:$success !important;
+    }
+    &.warning{
+        color:$warning !important;
+        background:$warning-status-bg !important;
+        background-color:$warning-status-bg !important;
+        &:hover, &:focus, &:active{
+            color:$warning !important;
+            background:$warning-status-bg !important;
+            background-color:$warning-status-bg !important;
+        }
+    }
+    &.btn-outline-warning{
+        border-color:$warning !important;
+    }
+    &.danger{
+        color:$danger !important;
+        background:$danger-status-bg !important;
+        background-color:$danger-status-bg !important;
+        &:hover, &:focus, &:active{
+            color:$danger !important;
+            background:$danger-status-bg !important;
+            background-color:$danger-status-bg !important;
+        }
+    }
+    &.btn-outline-danger{
+        border-color:$danger !important;
+    }
+    &.info{
+        color:$info !important;
+        background:$info-status-bg !important;
+        background-color:$info-status-bg !important;
+        &:hover, &:focus, &:active{
+            color:$info !important;
+            background:$info-status-bg !important;
+            background-color:$info-status-bg !important;
+        }
+    }
+    &.btn-outline-info{
+        border-color:$info !important;
+    }
+}
+
+/*-------------Button Status End--------------*/

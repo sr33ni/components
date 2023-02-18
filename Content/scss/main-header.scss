@@ -1,0 +1,63 @@
+﻿
+/*-------------Main Header Start--------------*/
+
+.main-header {
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    padding: 2.125rem 3.313rem 1.125rem calc(100px + 3.313rem);
+    background-color: $main-header-bg;
+    z-index:11;
+    max-height:116px;
+
+    .list-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 0;
+
+        li {
+            display: inline;
+            font-size: $f-18px;
+            margin-left: 1.846rem;
+            color: $grey-100;
+
+            .dropdown {
+                .dropdown-toggle {
+                    color: $black-100;
+                    padding: 0;
+                    height: auto;
+                    box-shadow: none !important;
+                    border: 0 !important;
+                }
+            }
+
+            .form-inline {
+                .form-group {
+                    label {
+                        font-weight: $fw-regular;
+                        font-size: $f-14px;
+                    }
+
+                    .form-control {
+                        color: $black-100;
+                        font-weight: $fw-medium;
+                        font-size: $f-14px;
+                    }
+                    select {
+                        background: url(../images/angle-down.png) calc(100% - 0.5rem) 52% no-repeat;
+                        padding-right: 40px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-header-medium {
+    padding: 0.125rem 1.313rem 1.125rem calc(100px + 0.113rem);
+    max-height: 65px;
+}
+
+/*-------------Main Header End--------------*/

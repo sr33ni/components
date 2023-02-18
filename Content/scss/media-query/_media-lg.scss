@@ -1,0 +1,87 @@
+﻿// Large devices (desktops, less than 1200px) -max-width: 1199.98px
+@include media-breakpoint-down(lg) {
+
+    html {
+        font-size: 13px;
+    }
+    /*--------Main Header Start----------*/
+    .main-header {
+        padding: 0.125rem 1.313rem 1.125rem calc(100px + 0.113rem);
+    }
+    /*--------Main Header End----------*/
+    /*--------Side Menu Start----------*/
+    .sidemenu {
+        width: 69px;
+
+        .sidemenu-bg {
+            width: 70px;
+        }
+
+        .logo {
+            width: 69px;
+
+            img {
+                left: 1.65rem;
+            }
+        }
+
+        .toggler {
+            width: 69px;
+            padding: 15px 26px;
+        }
+
+        .menu-list {
+            li {
+                a {
+                    i {
+                        min-width: 69px;
+                    }
+                }
+            }
+        }
+
+        .bottom-box {
+            width: 69px;
+            padding: 20px 17px;
+        }
+    }
+    /*--------Side Menu End----------*/
+    /*--------Page Wrapper Start----------*/
+    .page-wrapper {
+        padding: calc(90px + 0.125rem) 1.313rem 1.125rem calc(120px + 1.313rem);
+    }
+    /*--------Page Wrapper End----------*/
+    /*--------Map View Start----------*/
+    .mapview-container {
+        .left-box {
+            width: 410px;
+            min-width: 410px;
+            max-width: 410px;
+        }
+
+        .right-box {
+            width: calc(100% - 411px);
+            min-width: calc(100% - 411px);
+        }
+    }
+    /*--------Map View End----------*/
+    /*--------Vertical Carousel Start----------*/
+    .vertical-carousel {
+        max-width: calc(100% - 300px);
+        margin: 0px 100px 0px 200px;
+
+        .carousel-indicators {
+            margin: 0 0 0 -180px;
+            width: 150px;
+
+            li {
+                width: 150px;
+            }
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            right: -85px;
+        }
+    }
+    /*--------Vertical Carousel End----------*/
+}

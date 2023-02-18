@@ -1,0 +1,52 @@
+﻿.k-grid.k-widget {
+    border: 0;
+    .k-grid-header {
+        padding-right: 0 !important;
+        background-color: $white;
+        border:0;
+        .k-grid-header-wrap{
+            border:0;
+        }
+
+        th.k-header {
+            border: 0;
+            color: $th-color;
+            font-size: $f-13px;
+            font-weight: $fw-medium;
+            padding: 0.75rem;
+            background-color: $white;
+            min-width:100px;
+            a.k-link{
+                color: $th-color;
+            }
+        }
+    }
+    .k-grid-content{
+        overflow-y:auto;
+    }
+    .grid-table{
+        tr{            
+            background-color: $white !important;
+            td{            
+                padding: 0.75rem;
+                font-size: $f-14px;
+                font-weight: $fw-regular;
+                color: $td-color;
+                border:0;
+                border-top:1px solid $table-border-color;
+                overflow:visible;
+                min-width:100px;
+                a, .btn{
+                    color:$grey;
+                }
+                .dropdown-menu {
+                    min-width:13rem;
+                    .dropdown-item{
+                        width:auto;
+                        white-space:normal;
+                    }
+                }
+            }
+        }
+    }
+}

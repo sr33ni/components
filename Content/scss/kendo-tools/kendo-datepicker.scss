@@ -1,0 +1,54 @@
+﻿.custom-kendo-datepicker{
+    background-color: $white;
+    .k-picker-wrap{
+        background-color: $white;
+        border-color: $input-border;
+        border-radius: 8px;
+        
+        .k-input{
+            width: calc(100% - 36px) !important;
+            padding: 0.75rem 1rem;
+            height:auto;
+            text-indent:0;
+            line-height:unset;
+            color: $grey-100;
+            font-weight: $fw-medium;
+            font-size: $f-15px;
+            border-radius: 8px 0 0 8px;
+        }
+        .k-select{
+            border-radius: 0 8px 8px 0;
+            border-color: $input-border;
+            width:35px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            .k-icon{
+            }
+        }
+        &.k-state-focused{
+            box-shadow: $input-focus-boxshadow;
+            border-color: $input-focus-border-color;
+            .k-select{
+                border-color: $input-focus-border-color;
+                &:before{
+                    position:absolute;
+                    content:"";
+                    left:0;
+                    top:0;
+                    bottom:0;
+                    box-shadow: $input-focus-boxshadow;
+                }
+            }
+        }
+    }
+}
+
+.k-calendar-container.k-popup{
+    background-color:$white;
+    border-color:$silver;
+    border-radius:5px;
+    box-shadow:$box-shadow-common;
+}
+
+    

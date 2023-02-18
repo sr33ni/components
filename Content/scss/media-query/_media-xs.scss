@@ -1,0 +1,263 @@
+﻿//X-Small devices (portrait phones, less than 576px) - max-width: 575.98px
+@include media-breakpoint-down(xs) {
+    /*-------------Main Header Start--------------*/
+    .main-header {
+        .list-right {
+            li {
+                .form-inline {
+                    .form-group {
+                        display: flex;
+                        flex: 0 0 auto;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        margin-bottom: 0;
+                    }
+
+                    label {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 0;
+                        margin-top: 0;
+                    }
+
+                    .form-control {
+                        display: inline-block;
+                        width: auto;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+    /*-------------Main Header End--------------*/
+    /*--------Dashboard Start----------*/
+    .task-overview-wrapper {
+        .task-status-card {
+            height: auto !important;
+            min-height: 165px;
+            margin-bottom: 1rem;
+        }
+    }
+    /*--------Dashboard Ends----------*/
+    /*-------------Network Box Start--------------*/
+    .progress--circle {
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+
+        &:before {
+            top: 3px;
+            left: 3px;
+            right: 3px;
+            bottom: 3px;
+        }
+
+        .user-icon {
+            top: 1px;
+            left: 5px;
+            right: 5px;
+            bottom: 1px;
+            width: calc(100% - 10px);
+        }
+    }
+
+    .networkdetails {
+        width: 150px;
+        height: 150px;
+        margin: 50px auto;
+    }
+
+    .networkdetails {
+        .maincircle {
+            height: 30px;
+        }
+
+        ul {
+
+            li {
+                width: 110px;
+
+                &:after {
+                    width: 4px;
+                    height: 4px;
+                }
+
+                span.number {
+                    font-size: $f-11px;
+                }
+
+                &.net_one {
+                    top: -24px;
+                    left: calc(50% - 100px);
+
+                    &:after {
+                        bottom: -20px;
+                        left: 98px;
+                    }
+
+                    span.number {
+                        bottom: -15px;
+                        right: 88px;
+                    }
+                }
+
+                &.net_two {
+                    top: 10px;
+                    right: -50px;
+
+                    &:after {
+                        left: -5px;
+                        bottom: -17px;
+                    }
+
+                    span.number {
+                        bottom: -18px;
+                        left: 5px;
+                    }
+                }
+
+                &.net_three {
+                    top: 45px;
+                    right: -68px;
+
+                    &:after {
+                        left: -14px;
+                        top: 18px;
+                    }
+
+                    span.number {
+                        bottom: 0px;
+                        left: -7px;
+                    }
+                }
+
+                &.net_four {
+                    bottom: 40px;
+                    right: -68px;
+
+                    &:after {
+                        left: -14px;
+                        top: 1px;
+                    }
+
+                    span.number {
+                        bottom: 10px;
+                        left: -9px;
+                    }
+                }
+
+                &.net_five {
+                    bottom: 5px;
+                    right: -55px;
+
+                    &:after {
+                        top: -24px;
+                        left: -9px;
+                    }
+
+                    span.number {
+                        bottom: 30px;
+                        left: -9px;
+                    }
+                }
+
+                &.net_six {
+                    bottom: -30px;
+                    left: calc(50% - 100px);
+
+                    &:after {
+                        top: -27px;
+                        left: 98px;
+                    }
+
+                    span.number {
+                        top: -19px;
+                        left: 88px;
+                    }
+                }
+
+                &.net_seven {
+                    bottom: 10px;
+                    left: -53px;
+
+                    &:after {
+                        top: -19px;
+                        right: -8px;
+                    }
+
+                    span.number {
+                        top: -15px;
+                        right: 2px;
+                    }
+                }
+
+                &.net_eight {
+                    bottom: 45px;
+                    left: -70px;
+
+                    &:after {
+                        right: -17px;
+                        top: 7px;
+                    }
+
+                    span.number {
+                        bottom: 18px;
+                        right: -12px;
+                    }
+                }
+
+                &.net_nine {
+                    top: 40px;
+                    left: -70px;
+
+                    &:after {
+                        right: -17px;
+                        top: 23px;
+                    }
+
+                    span.number {
+                        top: 9px;
+                        right: -12px;
+                    }
+                }
+
+                &.net_ten {
+                    top: 8px;
+                    left: -54px;
+
+                    &:after {
+                        right: -9px;
+                        bottom: -20px;
+                    }
+
+                    span.number {
+                        bottom: -13px;
+                        right: -12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .networkdetails ul li.net_two,
+    .networkdetails ul li.net_three,
+    .networkdetails ul li.net_four,
+    .networkdetails ul li.net_five {
+
+        .expert_details {
+            margin-left: 0.25rem;
+        }
+    }
+
+    .networkdetails ul li.net_two,
+    .networkdetails ul li.net_three,
+    .networkdetails ul li.net_four,
+    .networkdetails ul li.net_five {
+
+        .expert_details {
+            margin-left: 0.25rem;
+        }
+    }
+    /*-------------Network Box Ends--------------*/
+}

@@ -1,0 +1,25 @@
+﻿ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-inline-right{  
+    li.list-inline-item {
+        margin-right: 14px;
+        &:last-child{
+            margin-right:0;
+        }
+    }
+}
+.list-inline-center {
+    display: flex;
+    justify-content: space-between;
+
+    li.list-inline-item {
+        margin-left: 14px;
+        &:last-child{
+            margin-right:0;
+        }
+    }
+}

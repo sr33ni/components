@@ -1,0 +1,19 @@
+﻿.progress {
+    &.progress-xs {
+        height: 3px;
+    }
+
+    &.progress-xm {
+        height: 10px;
+        
+    }
+     &.progress-ym {
+        width: 100px;
+    }
+
+    &.progress-v-xs {
+        width: 3px;
+        flex-direction: column-reverse;
+    }
+
+}

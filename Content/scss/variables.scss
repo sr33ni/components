@@ -1,0 +1,219 @@
+﻿/*-------------Basic Color Theme--------------*/
+
+$blue: #341EFF;
+$blue-dark: #000047;
+$blue-lite: #EFEFFF;
+$sky-blue: #1BB1F0;
+$skyblue-light: #EAF8FF;
+$black: #000000;
+$white: #FFFFFF;
+$violet: #5C4BFF;
+$green: #1CD265;
+$green-light: #E4FFED;
+$red: #FF3838;
+$redlite: #FFF3EF;
+$silver: #EAEAF3;
+$grey: #6E7380;
+$orange:#ffc107;
+$orange-lite:#fdf7e6;
+
+/*-------------Basic Color Theme--------------*/
+/*-------------Color Variant--------------*/
+/*--------Blue--------*/
+$blue-100: #4E3EE8;
+/*--------Blue--------*/
+
+/*--------Blue Dark--------*/
+$blue-dark-100: #1F1299;
+$blue-dark-200: #1E1664;
+/*--------Blue Dark--------*/
+
+/*--------Black--------*/
+$black-100: #363636;
+/*--------Black--------*/
+
+/*--------White--------*/
+$white-100: #F7F7FF;
+$white-200: #FCFCFC;
+$white-300: #F7F7F7;
+$white-400: #F8F8F8;
+$white-500: #F8F8FF;
+/*--------White--------*/
+/*--------Sky Blue--------*/
+$sky-blue-100: #346A94;
+$sky-blue-200: #0073B1;
+$sky-blue-300: #e1f6ff;
+/*--------Sky Blue--------*/
+
+/*--------Red--------*/
+$red-100: #FF6032;
+/*--------Red--------*/
+
+/*--------Siver--------*/
+$silver-100: #D7DCE8;
+$silver-200: #EEEEF7;
+$silver-300: #E5E5E5;
+/*--------Siver--------*/
+
+/*--------Grey--------*/
+$grey-100: #838894;
+$grey-200: #B3B3C7;
+/*--------Grey--------*/
+
+/*-------------Color Variant--------------*/
+
+
+/*-------------Main Header Color Theme--------------*/
+
+$main-header-bg: $white-200;
+
+/*-------------Main Header Color Theme--------------*/
+
+
+/*-------------Side Menu Color Theme--------------*/
+
+$sidemenu-bg: $white;
+$sidemenu-border-color: $silver-100;
+$sidemenu-link-color: $grey-200;
+$sidemenu-link-color-hover: $blue-dark;
+$sidemenu-toggle-btn-color: $grey-200;
+$sidemenu-toggle-btn-color-hover: $blue-dark;
+
+/*-------------Side Menu Color Theme--------------*/
+
+/*-------------Font Size--------------*/
+
+$f-10px: 0.625rem;
+$f-11px: 0.688rem;
+$f-12px: 0.75rem;
+$f-13px: 0.813rem;
+$f-14px: 0.875rem;
+$f-15px: 0.938rem;
+$f-16px: 1rem;
+$f-17px: 1.063rem;
+$f-18px: 1.125rem;
+$f-19px: 1.188rem;
+$f-20px: 1.25rem;
+$f-21px: 1.313rem;
+$f-22px: 1.375rem;
+$f-23px: 1.438rem;
+$f-24px: 1.5rem;
+$f-25px: 1.563rem;
+$f-26px: 1.625rem;
+$f-27px: 1.688rem;
+$f-28px: 1.75rem;
+$f-29px: 1.813rem;
+$f-30px: 1.875rem;
+$f-31px: 1.938rem;
+$f-32px: 2rem;
+$f-33px: 2.063rem;
+$f-34px: 2.125rem;
+$f-35px: 2.188rem;
+$f-36px: 2.25rem;
+$f-37px: 2.313rem;
+$f-38px: 2.375rem;
+$f-39px: 2.438rem;
+$f-40px: 2.5rem;
+$f-41px: 2.563rem;
+$f-42px: 2.625rem;
+
+/*-------------Font Size--------------*/
+
+/*-------------Font Weight--------------*/
+
+$fw-lite: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+/*-------------Font Weight--------------*/
+
+/*-------------Table--------------*/
+
+$table-border-color: $silver;
+$th-color: $grey;
+$td-color: rgba(0, 0, 0, 0.8);
+
+/*-------------Table--------------*/
+
+/*-------------Status Color--------------*/
+
+
+$success: $green;
+$success-bg: $green;
+$success-status-bg: $green-light;
+$danger: $red;
+$danger-bg: $red;
+$danger-status-bg: $redlite;
+$warning: $orange;
+$warning-bg: $orange;
+$warning-status-bg: $orange-lite;
+$info:$sky-blue;
+$info-bg:$sky-blue;
+$info-status-bg:$sky-blue-300;
+$default:$grey-100;
+$default-bg:$grey-100;
+$default-status-bg:$white-400;
+$new: $blue;
+$in-progress: $sky-blue;
+$review: $red-100;
+$completed: $green;
+
+/*-------------Status Color--------------*/
+
+/*-------------Input Color--------------*/
+$input-focus-boxshadow:0 0 0 0.2rem rgba(52, 30, 255, 0.25);
+$input-focus-border-color:#a79eff;
+$input-border-color:$silver-100;
+$input-label-focus-color:#a79eff;
+/*-------------Input Color--------------*/
+
+
+/*-------------Kendo Tree Color--------------*/
+$kt-checkbox-border:$grey-100;
+$kt-checkbox-focus-border:$blue;
+$kt-checkbox-checked-bg:$blue;
+
+/*-------------Kendo Tree Color--------------*/
+
+
+/************ Signin module **************/
+$box-shadow: 11px 17px 65px rgba(0, 0, 0, 0.1);
+$signin-card-boxshadow: $box-shadow;
+$signin-card-border-color: $silver-100;
+/************Dashboard module **************/
+$border-common-color: #EEEEF7;
+$box-shadow-common: 3px 3px 9px rgba(0, 0, 0, 0.03);
+
+$card-border-color: $border-common-color;
+$status-box-shadow: $box-shadow-common;
+$success-bg: $green;
+$progress-bg: $skyblue-light;
+$new-bg: $blue-lite;
+$danger-bg: $red;
+$offline-bg: $white-400;
+$offline: $grey-100;
+$text-danger: $red;
+$text-succes: $green;
+$text-progress: $in-progress;
+$text-new: $new;
+$dark-font-color: $blue-dark;
+$light-font-color: $grey;
+$common-btn-bg: $blue;
+/********* Task board **********/
+$form-border-color: $silver-100;
+$comments-text: $black-100;
+$btn-light: $grey-100;
+$btn-dark: $black-100;
+$bg-danger-light: #FFA085;
+$input-border: #DDDDEE;
+
+/************new-palette **************/
+$bg-new-palette: #F2EDF3;
+$light-new-palette: #F0F0F1;
+$youtube-color: #FF0000;
+$facebook-color: #4267B2;
+$twitter-color: #1DA1F2;
+$googlered-color: #DB4437;
+$dribbble-color: #ea4c89;

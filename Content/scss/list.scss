@@ -1,0 +1,74 @@
+﻿@import "variables.scss";
+
+
+.grid-wrapper{
+    display:grid;
+    grid-auto-rows:minmax(10px, auto);
+    grid-column-gap:8px;
+}
+.grid-col-two {
+    grid-template-columns: 30% 70%;
+}
+.grid-col-two-new {
+    grid-template-columns: 60% 40%;
+    grid-column-gap: 0px;
+}
+.grid-col-three {
+    grid-template-columns: repeat(3, 3fr);
+}
+.grid-col-two-new-one {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column-gap: 0px;
+}
+.grid-col-four {
+    grid-template-columns: 3fr 1fr 2fr 2fr;
+
+}
+.grid-col-four-new {
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+   
+}
+.grid-col-five {
+    grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
+    grid-column-gap: 40px;
+    
+}
+.grid-center{
+    align-items:center;
+}
+.grid-end {
+    justify-items: end;
+}
+.text-align{
+      text-align:end;
+}
+.index{ 
+    position:absolute;
+    z-index:20;
+    top:25px;
+    left:25px;
+}
+
+
+.progress--bar.progress--45:after {
+    width: 30%;
+}
+
+.progress--circle.progress--45:after {
+    background-image: linear-gradient(145deg, $gray-100 50%, transparent 50%, transparent), linear-gradient(300deg, $primary 50%, $white 50%, $white);
+}
+.progress--bar.progress--55:after {
+    width: 55%;
+}
+
+.progress--circle.progress--55:after {
+    background-image: linear-gradient(110deg, $gray-100 50%, transparent 50%, transparent), linear-gradient(300deg, $info 50%, $white 50%, $white);
+}
+.progress--bar.progress--85:after {
+    width: 85%;
+}
+
+.progress--circle.progress--85:after {
+    background-image: linear-gradient(90deg, $danger 50%, transparent 50%, transparent), linear-gradient(300deg, $danger 50%, $gray-100 50%, $white);
+}

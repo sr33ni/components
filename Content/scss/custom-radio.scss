@@ -1,0 +1,23 @@
+﻿.radio-invisible {
+    padding: 0rem !important;
+
+    .custom-control-label {
+        border: 1px solid $input-border;
+        border-radius: 8px;
+        padding:0.25rem;
+        min-height: 60px;
+        max-height:60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width:100px;
+        max-width: 100px;
+        &:after, &:before{
+            display:none !important;
+        }
+    }
+    .custom-control-input:checked ~ .custom-control-label{
+        border-color: $input-focus-border-color;
+    }
+}

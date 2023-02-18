@@ -1,0 +1,68 @@
+﻿@import "variables.scss";
+
+.timeline-default {
+    .main-grid {
+        display: grid;
+        grid-template-columns: 1px 1fr;
+
+
+        .progress-bar {
+            box-sizing: border-box;
+            border-left: 1px dashed $default;
+            background-color: white;
+        }
+
+
+
+        .progress-menu {
+            height: 140px;
+
+            .progress-card {
+                position: relative;
+                transform: translateX(-8px);
+                width: 15px;
+                height: 15px;
+                background-color: whitesmoke;
+                border-radius: 50%;
+
+                .green {
+                    background-color: $success;
+                    box-shadow: 0px 0px 4px 0px $success;
+                }
+
+                .yellow {
+                    background-color: $orange;
+                    box-shadow: 0px 0px 4px 0px $orange;
+                }
+
+                .l-blue {
+                    background-color: $info;
+                    box-shadow: 0px 0px 4px 0px $info;
+                }
+
+                .red {
+                    background-color: $danger;
+                    box-shadow: 0px 0px 4px 0px $danger;
+                }
+
+                .custom {
+                    position: absolute;
+                    top: 2px;
+                    border-radius: 50%;
+                    width: 11px;
+                    height: 11px;
+                    left: 0;
+                    top: 2px;
+                    z-index: 1;
+                    transform: translateX(2px);
+
+                    .content {
+                        margin-left: 20px;
+                        position: absolute;
+                        width: 330px;
+                    }
+                }
+            }
+        }
+    }
+}

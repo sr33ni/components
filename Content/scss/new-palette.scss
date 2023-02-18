@@ -1,0 +1,164 @@
+﻿
+
+.t-circle-one{
+    position:absolute;
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    background-color:white;
+    top:-10px;
+    right:-50px;
+    opacity:0.3;
+    margin:0;
+}
+.t-circle-two {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+    top: 100px;
+    right: -30px;
+    opacity: 0.3;
+    margin:0;
+    
+}
+.new-primary-bg {
+    background: rgb(206,129,255);
+    background: linear-gradient(90deg, rgba(206,129,255,1) 0%, rgba(164,94,255,1) 100%);
+}
+.new-info-bg {
+    background: rgb(126,193,246);
+    background: linear-gradient(90deg, rgba(126,193,246,1) 0%, rgba(42,147,230,1) 100%);
+}
+.new-danger-bg {
+    background: rgb(255,181,150);
+    background: linear-gradient(90deg, rgba(255,181,150,1) 0%, rgba(254,134,150,1) 100%);
+}
+.new-success-bg {
+    background: rgb(116,213,203);
+    background: linear-gradient(90deg, rgba(116,213,203,1) 0%, rgba(39,194,171,1) 100%);
+}
+.new-warning-bg {
+    background: rgb(248,233,156);
+    background: llinear-gradient(90deg, rgba(248,233,156,1) 0%, rgba(255,221,51,1) 100%);
+}
+
+.custom-font-one {
+    font-size: $f-12px !important;
+}
+.custom-font-two {
+    font-size: $f-15px !important;
+}
+.custom-font-four {
+    font-size: $f-42px !important;
+}
+.custom-font-five {
+    font-size: $f-32px !important;
+}
+
+.custom-font-three {
+    font-size: 220px !important;
+}
+
+.new-primary-font {
+    color: rgb(206,129,255);
+    color: linear-gradient(90deg, rgba(206,129,255,1) 0%, rgba(164,94,255,1) 100%);
+}
+.new-secondary-font {
+    color: rgb(235,238,242);
+    color: linear-gradient(90deg, rgba(235,238,242,1) 0%, rgba(158,165,171,1) 100%);
+}
+
+.new-info-font {
+    color: rgb(126,193,246);
+    color: linear-gradient(90deg, rgba(126,193,246,1) 0%, rgba(42,147,230,1) 100%);
+}
+.new-warning-font {
+    color: rgb(248,233,156);
+    color: linear-gradient(90deg, rgba(248,233,156,1) 0%, rgba(255,221,51,1) 100%);
+}
+
+.new-danger-font {
+    color: rgb(255,181,150);
+    color: linear-gradient(90deg, rgba(255,181,150,1) 0%, rgba(254,134,150,1) 100%);
+}
+
+.new-success-font {
+    color: rgb(116,213,203);
+    bcolor: linear-gradient(90deg, rgba(116,213,203,1) 0%, rgba(39,194,171,1) 100%);
+}
+
+.bg-new-palette {
+    background-color: $bg-new-palette
+}
+.font-new-palette {
+    font-size: $f-12px;
+}
+.button-new {
+    padding: 2px 12px 2px 12px;
+    min-height: 42px;
+    border-radius:3px;
+}
+#fullscreen {
+    overflow:auto;
+    
+}
+.face-circle{
+    border-radius:50%;
+}
+.face-circle-edit {
+    border-radius: 50%;
+    width:30px;
+}
+.logo-name-purple {
+    margin-left: 11px;
+    width: 135px;
+    height: 28px;
+}
+.logo-purple {
+    
+    margin-top: 1.5px;
+    width: 51px;
+    height: 20px;
+}
+.not-dot{
+    position:absolute;
+    font-size:5px;
+    top:0px;
+}
+.img-not-dot {
+    position: absolute;
+    font-size: 5px;
+    top: 20px;
+    left:25px;
+
+}
+
+.chevron {
+    position: absolute !important;
+    padding: 0 !important;
+    min-width: 3px !important;
+    text-align: center;
+    font-size: $f-11px !important;
+    right:55px;
+    top:18px;
+    
+}
+.bullet {
+    position: relative;
+
+    &:before {
+        content: ' \25B8';
+        margin-right:10px;
+    }
+}
+.login-page {
+    background-color: $bg-new-palette;
+}
+.log-in-logo{
+    width:130px;
+}
+.error{
+    height:100vh;
+}

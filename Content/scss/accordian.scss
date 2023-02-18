@@ -1,0 +1,73 @@
+﻿
+.default-accordian {
+    .card {
+        border: 1px solid $silver;
+
+        .card-header {
+            background-color: $white;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding: 0;
+
+            .btn {
+                padding: 1.5rem 1rem;
+                font-size: $f-17px;
+                box-shadow: none;
+                border: none;
+                outline: none;
+                max-height: unset;
+                color: $blue;
+                text-decoration: none !important;
+
+                i.fa-chevron-up {
+                    position: absolute;
+                    right: 1rem;
+                    top: 1.5rem;
+                    color: $grey;
+                    font-size: 1.2rem;
+                    background: $silver;
+                    padding: 5px;
+                    border-radius: 3px;
+                    width: 30px;
+                    height: 30px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                &.collapsed {
+                    i.fa-chevron-up {
+                        -moz-transform: rotate(180deg);
+                        -webkit-transform: rotate(180deg);
+                        -o-transform: rotate(180deg);
+                        -ms-transform: rotate(180deg);
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .card-body {
+            padding: 1.5rem 1rem;
+        }
+    }
+
+    &.custom-accordian {
+        .card {
+            margin-bottom: 1rem;
+            border: 0;
+            .card-header{
+                border-bottom: 1px solid $silver !important;
+                margin-bottom:0;
+                .btn{
+                    i.fa-chevron-up{
+                        right:0rem;
+                    }
+                }
+            }
+            .card-body{
+                background-color:$silver;
+            }
+        }
+    }
+}

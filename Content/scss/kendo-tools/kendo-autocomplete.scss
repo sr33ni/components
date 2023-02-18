@@ -1,0 +1,27 @@
+﻿.custom-kendo-autocomplete{
+
+    &.k-autocomplete {
+        background-color: $white;
+        border-color: $input-border;
+        border-radius: 8px;
+        background-image:none;
+        width:100%;
+
+        .k-input {
+            padding: 0.75rem 1rem;
+            height: auto;
+            border-radius: 8px;
+            text-indent: 0;
+            line-height: unset;
+            color: $grey-100;
+            font-weight: $fw-medium;
+            font-size: $f-15px;
+            width: calc(100% - 32px) !important;
+        }
+
+        &.k-state-focused {
+            box-shadow: $input-focus-boxshadow;
+            border-color: $input-focus-border-color;
+        }
+    }
+}

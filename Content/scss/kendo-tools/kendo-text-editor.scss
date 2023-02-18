@@ -1,0 +1,35 @@
+﻿.custom-textEditor {
+    .k-editor-widget {
+        background-image: none;
+        background-color: $white;
+        border-spacing:0;
+        border:1px solid $silver;
+        border-radius:8px;
+        .k-editor-toolbar-wrap{
+            font-size: $f-15px;
+            padding:4px;
+            .k-tool{
+                border-color: $silver;
+                &.k-state-hover{
+                    background-color: $blue;
+                }
+                &.k-state-selected{
+                    background-color:$blue;
+                    border-color: $blue;
+                }
+            }            
+        }
+        .k-dropdown-wrap.k-state-default{
+            background-color: $silver;
+            border-color: $silver;
+            box-shadow: none;
+        }
+        
+        .k-editable-area{
+            border:0;
+            padding:4px;
+            border-top:1px solid $silver;
+            border-radius:0px 0px 8px 8px;
+        }
+    }
+}

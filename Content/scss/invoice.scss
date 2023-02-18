@@ -1,0 +1,77 @@
+﻿.invoice-container {
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    max-width: 900px;
+    margin: auto auto 1rem auto;
+
+    .header {
+        padding: 2rem 2rem 1rem 2rem;
+        border-bottom: 1px solid $silver-200;
+    }
+
+    .single-row {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        line-height: 3rem;
+        color: $grey;
+        font-weight: $fw-regular;
+    }
+
+    p {
+        line-height: 1.75rem;
+        color: $grey;
+        font-weight: $fw-regular;
+        font-size: $f-15px;
+    }
+
+    .content {
+        padding: 2rem 0rem 1rem 0rem;
+    }
+
+    .content-padding {
+        padding: 0rem 2rem 0rem 2rem;
+    }
+
+    .inline-date {
+        display: flex;
+    }
+
+    table {
+        margin-bottom: 1rem;
+
+        &.no-padding {
+            td, th {
+                padding: 0;
+                min-height: 1rem;
+            }
+        }
+
+        th {
+            padding: 0.75rem 2rem 0.75rem 2rem;
+            font-size: $f-15px;
+            color: $grey;
+        }
+
+        td {
+            line-height: 1.75rem;
+            color: $grey;
+            font-weight: $fw-regular;
+            font-size: $f-15px;
+            min-width: 100px;
+            padding: 0.75rem 2rem 0.75rem 2rem;
+            color: $grey;
+        }
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid $silver-200;
+    }
+
+    .footer {
+        border-top: 1px solid $silver-200;
+        padding: 2rem 2rem 2rem 2rem;
+    }
+}

@@ -1,0 +1,55 @@
+﻿
+
+.scrollspy-container {
+    padding: 30px 30px;
+}
+
+.scrollspy-left-box {
+    height: 120px;
+    position: sticky;
+    top: calc(50% - 60px);
+    left: 200px !important;
+    margin: 0px 0px 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .scrollspyList {
+        li {
+            margin: 10px 0px;
+            a {
+                width: 14px;
+                min-width: 14px;
+                height: 14px;
+                display:block;
+                border-radius: 7px;
+                padding: 0;
+                background-color: transparent;
+                border: 3px solid $silver-100;
+
+                &.active {
+                    background-color: $blue;
+                    border-color: $blue;
+                }
+            }
+        }
+    }
+}
+
+.scrollspy-wrapper {
+
+    section {
+        min-height: 100vh;
+        max-height: 100vh;
+        padding: 100px;
+        text-align: center;
+
+        &:nth-child(odd) {
+            background-color: $red;
+        }
+
+        &:nth-child(even) {
+            background-color: $green;
+        }
+    }
+}

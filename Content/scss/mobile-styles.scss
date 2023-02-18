@@ -1,0 +1,96 @@
+﻿
+
+/*--------Mobile Top Header Styles----------*/
+.top-header {
+    padding: 1rem 2rem;
+    background-color: $white;
+
+    .user-circle {
+        border-radius: 13px;
+        height: 26px;
+        min-width: 26px;
+        width: 26px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .list-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 0;
+
+        li {
+            display: inline;
+            font-size: $f-18px;
+            margin-left: 1.538rem;
+            color: $grey-100;
+
+            .fa-bell {
+                position: relative;
+                font-size: $f-24px;
+
+                .notifi-dot {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 4px;
+                    background-color: $blue;
+                    border: 1px solid $white;
+                }
+            }
+            .ellipsis-dropdown{
+                .dropdown-toggle{
+                    color:$black-100;
+                }
+            }
+        }
+    }
+}
+/*--------Mobile Top Header Styles----------*/
+
+/*--------Mobile Menu Styles----------*/
+    .mobile-menu{
+        position:fixed;
+        bottom:0;
+        left:0;
+        width:100%;
+        list-style:none;
+        text-align:center;
+        background-color:$white;
+        z-index:99;
+        padding-bottom:1.5rem;
+        border-top: 1px solid $silver-200;
+        li{
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            margin:1.461rem;
+            font-size:$f-10px;
+            color:$grey-100;
+            font-weight:$fw-regular;
+            cursor:pointer;
+            i{
+                font-size:$f-22px;
+                margin-bottom:0.5rem;
+            }
+            &.active, &:hover{
+                color:$blue-dark;
+                font-weight:$fw-medium;
+            }
+        }
+    }
+    /*--------Mobile Menu Styles----------*/
+
+    .mobile-body-content{
+        padding-bottom:8rem;
+    }
+    .padding-px2{
+        padding:0 2rem;
+    }
